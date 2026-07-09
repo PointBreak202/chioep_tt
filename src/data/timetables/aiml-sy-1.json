@@ -1,0 +1,323 @@
+{
+  "division": "AIML-SY-1",
+  "branch": "AIML",
+  "standing": "SY",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction). High confidence, including DSY batch slots.",
+  "rooms": {
+    "NC-02": "NC02, 1st Floor, Academic Complex",
+    "NC-05": "NC05, 2nd Floor, Academic Complex",
+    "NC-27": "NC-27, 4th Floor, New CSE Dept Building",
+    "NC-28": "NC-28, 4th Floor, New CSE Dept Building",
+    "FOSS2": "FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building",
+    "Lab-1": "Lab 1, 4th Floor, New CSE Dept, Passage 2",
+    "Lab-3": "Lab 3, 4th Floor, New CSE Dept, Passage 1",
+    "GML": "Graphics and Multimedia Lab, 1st Floor, CSE Dept"
+  },
+  "faculty": {
+    "DE": "Ankita Mali",
+    "PLP": "Ashwini Gawade",
+    "DSCT": "Manish",
+    "ENTSP": "Teacher2",
+    "LL": "Teacher5"
+  },
+  "subjectNames": {
+    "DE": "Data Engineering",
+    "PLP": "Programming Language Paradigms",
+    "DSCT": "Data Structures and Complexity Theory",
+    "ENTSP": "Entrepreneurship",
+    "LL": "Language",
+    "OE": "Open Elective",
+    "HM": "Honours/Minor"
+  },
+  "schedule": {
+    "Mon": [
+      {
+        "start": "08:30",
+        "end": "09:30",
+        "type": "common",
+        "subject": "ENTSP",
+        "room": "NC-02"
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S2": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "FOSS2"
+          },
+          "AIML-SY1-S3": {
+            "subject": "PLP",
+            "label": "PLP Lab",
+            "room": "Lab-1"
+          },
+          "AIML-SY1-S1": {
+            "subject": "DSCT",
+            "label": "DSCT Lab",
+            "room": "GML"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "15:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S6(DSY)": {
+            "subject": "PLP",
+            "label": "PLP Lab",
+            "room": "Lab-3"
+          }
+        }
+      },
+      {
+        "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "LL",
+        "room": "NC-05"
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "LL",
+        "room": "NC-05"
+      }
+    ],
+    "Tue": [
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S3": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "FOSS2"
+          },
+          "AIML-SY1-S4": {
+            "subject": "PLP",
+            "label": "PLP Lab",
+            "room": "Lab-1"
+          },
+          "AIML-SY1-S2": {
+            "subject": "DSCT",
+            "label": "DSCT Lab",
+            "room": "GML"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "DE",
+        "room": "NC-28"
+      },
+      {
+        "start": "14:30",
+        "end": "15:30",
+        "type": "common",
+        "subject": "DSCT",
+        "room": "NC-28"
+      },
+      {
+        "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "PLP",
+        "room": "NC-28"
+      }
+    ],
+    "Wed": [
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S4": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "FOSS2"
+          },
+          "AIML-SY1-S5": {
+            "subject": "PLP",
+            "label": "PLP Lab",
+            "room": "Lab-1"
+          },
+          "AIML-SY1-S3": {
+            "subject": "DSCT",
+            "label": "DSCT Lab",
+            "room": "GML"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "DE",
+        "room": "NC-27"
+      },
+      {
+        "start": "14:30",
+        "end": "15:30",
+        "type": "common",
+        "subject": "DSCT",
+        "room": "NC-27"
+      },
+      {
+        "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "PLP",
+        "room": "NC-27"
+      }
+    ],
+    "Thu": [
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "common",
+        "subject": "OE"
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S5": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "FOSS2"
+          },
+          "AIML-SY1-S1": {
+            "subject": "PLP",
+            "label": "PLP Lab",
+            "room": "Lab-1"
+          },
+          "AIML-SY1-S4": {
+            "subject": "DSCT",
+            "label": "DSCT Lab",
+            "room": "GML"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "PLP",
+        "room": "NC-27"
+      },
+      {
+        "start": "14:30",
+        "end": "15:30",
+        "type": "common",
+        "subject": "DSCT",
+        "room": "NC-27"
+      },
+      {
+        "start": "15:30",
+        "end": "17:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S6(DSY)": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "FOSS2"
+          }
+        }
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "type": "common",
+        "subject": "HM"
+      }
+    ],
+    "Fri": [
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "common",
+        "subject": "OE"
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S1": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "FOSS2"
+          },
+          "AIML-SY1-S2": {
+            "subject": "PLP",
+            "label": "PLP Lab",
+            "room": "Lab-1"
+          },
+          "AIML-SY1-S5": {
+            "subject": "DSCT",
+            "label": "DSCT Lab",
+            "room": "GML"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "15:30",
+        "type": "batchwise",
+        "batches": {
+          "AIML-SY1-S6(DSY)": {
+            "subject": "DSCT",
+            "label": "DSCT Lab",
+            "room": "FOSS2"
+          }
+        }
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "HM"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "type": "common",
+        "subject": "HM"
+      }
+    ],
+    "Sat": []
+  }
+}

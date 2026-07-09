@@ -1,0 +1,363 @@
+{
+  "division": "CSE-SY-3",
+  "branch": "CSE",
+  "standing": "SY",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction). High confidence, including DSY batch slots.",
+  "rooms": {
+    "NC-01": "NC01, 1st Floor, Academic Complex",
+    "NC-02": "NC02, 1st Floor, Academic Complex",
+    "NC-14": "NC14, 4th Floor, Academic Complex",
+    "NC-27": "NC-27, 4th Floor, New CSE Dept Building",
+    "DSL": "Digital Systems Lab, 2nd Floor, CSE Dept",
+    "PL": "Programming Lab, 1st Floor, CSE Dept",
+    "DBMSL": "DBMS Lab, 2nd Floor, CSE Dept",
+    "DML": "Data Mining Lab, 1st Floor, ENTC Extension Building",
+    "ISL": "Information Security Lab, 3rd Floor, ENTC Extension Building",
+    "Lab-2": "Lab 2, 4th Floor, New CSE Dept, Passage 2"
+  },
+  "faculty": {
+    "MP": "Satish Kumbhar",
+    "DSA": "Sujata Sonawane",
+    "PPL": "Afsha Akkalkot",
+    "ENTSP": "Teacher",
+    "LL": "Teacher3",
+    "MDCP": "Maths Teacher1"
+  },
+  "subjectNames": {
+    "MP": "Microprocessors",
+    "DSA": "Data Structures and Algorithms",
+    "PPL": "Principles of Programming Languages",
+    "ENTSP": "Entrepreneurship",
+    "LL": "Language",
+    "MDCP": "Matrices, Differential Calculus and Probability",
+    "OE": "Open Elective",
+    "HM": "Honours/Minor"
+  },
+  "schedule": {
+    "Mon": [
+      {
+        "start": "08:30",
+        "end": "10:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S5": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          }
+        }
+      },
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S6(DSY)": {
+            "subject": "MDCP",
+            "label": "MDCP",
+            "room": "NC-14"
+          }
+        }
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S2": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DML"
+          },
+          "SY3-S3": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "ISL"
+          }
+        }
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "lunch"
+      },
+      {
+        "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "LL",
+        "room": "NC-27"
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "LL",
+        "room": "NC-27"
+      }
+    ],
+    "Tue": [
+      {
+        "start": "08:30",
+        "end": "10:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S4": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          }
+        }
+      },
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S6(DSY)": {
+            "subject": "MDCP",
+            "label": "MDCP",
+            "room": "NC-14"
+          }
+        }
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S1": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DML"
+          },
+          "SY3-S2": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "Lab-2"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "common",
+        "subject": "PPL",
+        "room": "NC-01"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "lunch"
+      },
+      {
+        "start": "14:30",
+        "end": "16:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S3": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY3-S4": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          },
+          "SY3-S6(DSY)": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          }
+        }
+      }
+    ],
+    "Wed": [
+      {
+        "start": "08:30",
+        "end": "09:30",
+        "type": "common",
+        "subject": "ENTSP",
+        "room": "NC-01"
+      },
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S6(DSY)": {
+            "subject": "MDCP",
+            "label": "MDCP",
+            "room": "NC-14"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-01"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "lunch"
+      },
+      {
+        "start": "14:30",
+        "end": "16:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S4": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY3-S5": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          },
+          "SY3-S3": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          }
+        }
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "MP",
+        "room": "NC-01"
+      }
+    ],
+    "Thu": [
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "common",
+        "subject": "OE"
+      },
+      {
+        "start": "11:30",
+        "end": "12:30",
+        "type": "lunch"
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "common",
+        "subject": "PPL",
+        "room": "NC-02"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-02"
+      },
+      {
+        "start": "14:30",
+        "end": "16:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S6(DSY)": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          },
+          "SY3-S5": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY3-S1": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          }
+        }
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "MP",
+        "room": "NC-01"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "type": "common",
+        "subject": "HM"
+      }
+    ],
+    "Fri": [
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "common",
+        "subject": "OE"
+      },
+      {
+        "start": "11:30",
+        "end": "12:30",
+        "type": "lunch"
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "common",
+        "subject": "MP",
+        "room": "NC-02"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-02"
+      },
+      {
+        "start": "14:30",
+        "end": "16:30",
+        "type": "batchwise",
+        "batches": {
+          "SY3-S6(DSY)": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY3-S1": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          },
+          "SY3-S2": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          }
+        }
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "HM"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "type": "common",
+        "subject": "HM"
+      }
+    ],
+    "Sat": []
+  }
+}

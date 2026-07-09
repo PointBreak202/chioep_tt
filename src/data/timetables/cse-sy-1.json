@@ -1,0 +1,276 @@
+{
+  "division": "CSE-SY-1",
+  "branch": "CSE",
+  "standing": "SY",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction). High confidence.",
+  "rooms": {
+    "NC-01": "NC01, 1st Floor, Academic Complex",
+    "DSL": "Digital Systems Lab, 2nd Floor, CSE Dept",
+    "PL": "Programming Lab, 1st Floor, CSE Dept",
+    "DBMSL": "DBMS Lab, 2nd Floor, CSE Dept"
+  },
+  "faculty": {
+    "MP": "Satish Kumbhar",
+    "DSA": "Sujata Sonawane",
+    "PPL": "Afsha Akkalkot",
+    "ENTSP": "Teacher",
+    "LL": "Teacher1"
+  },
+  "subjectNames": {
+    "MP": "Microprocessors",
+    "DSA": "Data Structures and Algorithms",
+    "PPL": "Principles of Programming Languages",
+    "ENTSP": "Entrepreneurship",
+    "LL": "Language",
+    "OE": "Open Elective",
+    "HM": "Honours/Minor"
+  },
+  "schedule": {
+    "Mon": [
+      {
+        "start": "08:30",
+        "end": "09:30",
+        "type": "common",
+        "subject": "ENTSP",
+        "room": "NC-01"
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY1-S1": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          },
+          "SY1-S3": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          },
+          "SY1-S2": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "15:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "LL",
+        "room": "NC-01"
+      }
+    ],
+    "Tue": [
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY1-S2": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          },
+          "SY1-S3": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY1-S4": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "PPL",
+        "room": "NC-01"
+      },
+      {
+        "start": "14:30",
+        "end": "15:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-01"
+      },
+      {
+        "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "MP",
+        "room": "NC-01"
+      }
+    ],
+    "Wed": [
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY1-S3": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          },
+          "SY1-S4": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY1-S5": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-01"
+      },
+      {
+        "start": "14:30",
+        "end": "15:30",
+        "type": "common",
+        "subject": "MP",
+        "room": "NC-01"
+      }
+    ],
+    "Thu": [
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "common",
+        "subject": "OE"
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY1-S4": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          },
+          "SY1-S5": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY1-S1": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "type": "common",
+        "subject": "PPL",
+        "room": "NC-01"
+      },
+      {
+        "start": "14:30",
+        "end": "15:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-01"
+      },
+      {
+        "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "MP",
+        "room": "NC-01"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "type": "common",
+        "subject": "HM"
+      }
+    ],
+    "Fri": [
+      {
+        "start": "09:30",
+        "end": "10:30",
+        "type": "common",
+        "subject": "OE"
+      },
+      {
+        "start": "10:30",
+        "end": "12:30",
+        "type": "batchwise",
+        "batches": {
+          "SY1-S5": {
+            "subject": "MP",
+            "label": "MP Lab",
+            "room": "DSL"
+          },
+          "SY1-S1": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
+          },
+          "SY1-S2": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "PL"
+          }
+        }
+      },
+      {
+        "start": "12:30",
+        "end": "13:30",
+        "type": "lunch"
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "type": "common",
+        "subject": "HM"
+      },
+      {
+        "start": "17:30",
+        "end": "18:30",
+        "type": "common",
+        "subject": "HM"
+      }
+    ],
+    "Sat": []
+  }
+}

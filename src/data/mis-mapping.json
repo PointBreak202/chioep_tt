@@ -1,0 +1,67 @@
+{
+  "currentAcademicYear": "26-27",
+  "branches": {
+    "15": { "code": "CSE", "name": "Computer Science and Engineering" },
+    "72": { "code": "AIML", "name": "Artificial Intelligence and Machine Learning" },
+    "11": { "code": "METALLURGY", "name": "Metallurgical and Materials Engineering" },
+    "10": { "code": "MECHANICAL", "name": "Mechanical Engineering" }
+  },
+  "supportedBranches": ["CSE", "AIML"],
+  "yearCodeToStanding": {
+    "25": "SY"
+  },
+  "divisions": {
+    "CSE": {
+      "SY": [
+        { "division": 1, "rollStart": 1, "rollEnd": 114, "batches": [
+            { "batch": 1, "rollStart": 1, "rollEnd": 23 },
+            { "batch": 2, "rollStart": 24, "rollEnd": 46 },
+            { "batch": 3, "rollStart": 47, "rollEnd": 69 },
+            { "batch": 4, "rollStart": 70, "rollEnd": 92 },
+            { "batch": 5, "rollStart": 93, "rollEnd": 114 }
+          ] },
+        { "division": 2, "rollStart": 115, "rollEnd": 228, "batches": [
+            { "batch": 1, "rollStart": 115, "rollEnd": 137 },
+            { "batch": 2, "rollStart": 138, "rollEnd": 160 },
+            { "batch": 3, "rollStart": 161, "rollEnd": 183 },
+            { "batch": 4, "rollStart": 184, "rollEnd": 206 },
+            { "batch": 5, "rollStart": 207, "rollEnd": 228 }
+          ] },
+        { "division": 3, "rollStart": 229, "rollEnd": 327, "batches": [
+            { "batch": 1, "rollStart": 229, "rollEnd": 248 },
+            { "batch": 2, "rollStart": 249, "rollEnd": 268 },
+            { "batch": 3, "rollStart": 269, "rollEnd": 288 },
+            { "batch": 4, "rollStart": 289, "rollEnd": 308 },
+            { "batch": 5, "rollStart": 309, "rollEnd": 327 }
+          ] },
+        { "division": 4, "rollStart": 328, "rollEnd": 421, "batches": [
+            { "batch": 1, "rollStart": 328, "rollEnd": 347 },
+            { "batch": 2, "rollStart": 348, "rollEnd": 367 },
+            { "batch": 3, "rollStart": 368, "rollEnd": 387 },
+            { "batch": 4, "rollStart": 388, "rollEnd": 407 },
+            { "batch": 5, "rollStart": 408, "rollEnd": 421 }
+          ] }
+      ]
+    },
+    "AIML": {
+      "SY": [
+        { "division": 1, "rollStart": 1, "rollEnd": 999, "batches": null }
+      ]
+    }
+  },
+  "batchLabelFormat": {
+    "CSE": "SY{division}-S{batch}",
+    "AIML": "AIML-SY{division}-S{batch}"
+  },
+  "manualBatchOptions": {
+    "AIML-1": [
+      "AIML-SY1-S1",
+      "AIML-SY1-S2",
+      "AIML-SY1-S3",
+      "AIML-SY1-S4",
+      "AIML-SY1-S5",
+      "AIML-SY1-S6(DSY)"
+    ]
+  },
+  "dsyNote": "Division 3 and 4 each also have a 15-student DSY batch (B6) with MIS numbers outside the regular roll ranges above. Exact DSY roll numbers not yet known - these students will currently see a roll_out_of_range error until we get that data."
+}
