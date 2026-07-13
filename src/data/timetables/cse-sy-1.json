@@ -2,12 +2,13 @@
   "division": "CSE-SY-1",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction). High confidence.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's updated timetable (Timetable-v1b, effective 6 Jul 26). High confidence.",
   "rooms": {
     "NC-01": "NC01, 1st Floor, Academic Complex",
+    "NC-03": "NC03, 1st Floor, Academic Complex",
     "DSL": "Digital Systems Lab, 2nd Floor, CSE Dept",
-    "PL": "Programming Lab, 1st Floor, CSE Dept",
-    "DBMSL": "DBMS Lab, 2nd Floor, CSE Dept"
+    "DBMSL": "DBMS Lab, 2nd Floor, CSE Dept",
+    "FOSS2": "FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building"
   },
   "faculty": {
     "MP": "Satish Kumbhar",
@@ -44,15 +45,16 @@
             "label": "MP Lab",
             "room": "DSL"
           },
-          "SY1-S3": {
-            "subject": "DSA",
-            "label": "DSA Lab",
-            "room": "PL"
-          },
           "SY1-S2": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Dnyaneshwari Dhadwad"
+          },
+          "SY1-S3": {
+            "subject": "DSA",
+            "label": "DSA Lab",
+            "room": "FOSS2"
           }
         }
       },
@@ -63,6 +65,13 @@
       },
       {
         "start": "15:30",
+        "end": "16:30",
+        "type": "common",
+        "subject": "LL",
+        "room": "NC-01"
+      },
+      {
+        "start": "16:30",
         "end": "17:30",
         "type": "common",
         "subject": "LL",
@@ -83,12 +92,13 @@
           "SY1-S3": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Dnyaneshwari Dhadwad"
           },
           "SY1-S4": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "FOSS2"
           }
         }
       },
@@ -108,13 +118,6 @@
         "start": "14:30",
         "end": "15:30",
         "type": "common",
-        "subject": "DSA",
-        "room": "NC-01"
-      },
-      {
-        "start": "15:30",
-        "end": "16:30",
-        "type": "common",
         "subject": "MP",
         "room": "NC-01"
       }
@@ -133,12 +136,13 @@
           "SY1-S4": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Dnyaneshwari Dhadwad"
           },
           "SY1-S5": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "FOSS2"
           }
         }
       },
@@ -182,12 +186,13 @@
           "SY1-S5": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Sneha G Chavan"
           },
           "SY1-S1": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "FOSS2"
           }
         }
       },
@@ -207,14 +212,14 @@
         "start": "14:30",
         "end": "15:30",
         "type": "common",
-        "subject": "DSA",
+        "subject": "MP",
         "room": "NC-01"
       },
       {
         "start": "15:30",
         "end": "16:30",
         "type": "common",
-        "subject": "MP",
+        "subject": "DSA",
         "room": "NC-01"
       },
       {
@@ -244,18 +249,26 @@
           "SY1-S1": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Dnyaneshwari Dhadwad"
           },
           "SY1-S2": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "FOSS2"
           }
         }
       },
       {
         "start": "12:30",
         "end": "13:30",
+        "type": "common",
+        "subject": "DSA",
+        "room": "NC-03"
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
         "type": "lunch"
       },
       {

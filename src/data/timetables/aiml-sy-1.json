@@ -2,7 +2,7 @@
   "division": "AIML-SY-1",
   "branch": "AIML",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction). High confidence, including DSY batch slots.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's updated timetable (Timetable-v1b, effective 6 Jul 26). High confidence, including DSY batch slots.",
   "rooms": {
     "NC-02": "NC02, 1st Floor, Academic Complex",
     "NC-05": "NC05, 2nd Floor, Academic Complex",
@@ -11,7 +11,8 @@
     "FOSS2": "FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building",
     "Lab-1": "Lab 1, 4th Floor, New CSE Dept, Passage 2",
     "Lab-3": "Lab 3, 4th Floor, New CSE Dept, Passage 1",
-    "GML": "Graphics and Multimedia Lab, 1st Floor, CSE Dept"
+    "GML": "Graphics and Multimedia Lab, 1st Floor, CSE Dept",
+    "PL": "Programming Lab, 1st Floor, CSE Dept"
   },
   "faculty": {
     "DE": "Ankita Mali",
@@ -43,11 +44,6 @@
         "end": "12:30",
         "type": "batchwise",
         "batches": {
-          "AIML-SY1-S2": {
-            "subject": "DE",
-            "label": "DE Lab",
-            "room": "FOSS2"
-          },
           "AIML-SY1-S3": {
             "subject": "PLP",
             "label": "PLP Lab",
@@ -57,6 +53,11 @@
             "subject": "DSCT",
             "label": "DSCT Lab",
             "room": "GML"
+          },
+          "AIML-SY1-S2": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "PL"
           }
         }
       },
@@ -98,11 +99,6 @@
         "end": "12:30",
         "type": "batchwise",
         "batches": {
-          "AIML-SY1-S3": {
-            "subject": "DE",
-            "label": "DE Lab",
-            "room": "FOSS2"
-          },
           "AIML-SY1-S4": {
             "subject": "PLP",
             "label": "PLP Lab",
@@ -112,6 +108,11 @@
             "subject": "DSCT",
             "label": "DSCT Lab",
             "room": "GML"
+          },
+          "AIML-SY1-S3": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "Lab-3"
           }
         }
       },
@@ -148,11 +149,6 @@
         "end": "12:30",
         "type": "batchwise",
         "batches": {
-          "AIML-SY1-S4": {
-            "subject": "DE",
-            "label": "DE Lab",
-            "room": "FOSS2"
-          },
           "AIML-SY1-S5": {
             "subject": "PLP",
             "label": "PLP Lab",
@@ -162,6 +158,11 @@
             "subject": "DSCT",
             "label": "DSCT Lab",
             "room": "GML"
+          },
+          "AIML-SY1-S4": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "Lab-3"
           }
         }
       },
@@ -204,11 +205,6 @@
         "end": "12:30",
         "type": "batchwise",
         "batches": {
-          "AIML-SY1-S5": {
-            "subject": "DE",
-            "label": "DE Lab",
-            "room": "FOSS2"
-          },
           "AIML-SY1-S1": {
             "subject": "PLP",
             "label": "PLP Lab",
@@ -218,6 +214,11 @@
             "subject": "DSCT",
             "label": "DSCT Lab",
             "room": "GML"
+          },
+          "AIML-SY1-S5": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "PL"
           }
         }
       },
@@ -271,11 +272,6 @@
         "end": "12:30",
         "type": "batchwise",
         "batches": {
-          "AIML-SY1-S1": {
-            "subject": "DE",
-            "label": "DE Lab",
-            "room": "FOSS2"
-          },
           "AIML-SY1-S2": {
             "subject": "PLP",
             "label": "PLP Lab",
@@ -285,6 +281,11 @@
             "subject": "DSCT",
             "label": "DSCT Lab",
             "room": "GML"
+          },
+          "AIML-SY1-S1": {
+            "subject": "DE",
+            "label": "DE Lab",
+            "room": "Lab-3"
           }
         }
       },

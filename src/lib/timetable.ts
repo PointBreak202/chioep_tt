@@ -11,6 +11,7 @@ interface BatchEntry {
   subject: string;
   label?: string;
   room?: string;
+  faculty?: string;
 }
 
 interface ScheduleSlot {
@@ -97,7 +98,7 @@ export function resolveDayAgenda(
       const isUnverified = entry.label?.includes("unverified") ?? false;
       const isLab = entry.subject !== "LEC" && !!entry.room;
       const roomName = entry.room ? timetable.rooms[entry.room] ?? entry.room : null;
-      const facultyName = timetable.faculty[entry.subject];
+      const facultyName = entry.faculty ?? timetable.faculty[entry.subject];
 
       let title = entry.label?.replace(/\s*\(unverified.*?\)/i, "") ?? entry.subject;
       if (entry.subject === "LEC") title = "Lecture";

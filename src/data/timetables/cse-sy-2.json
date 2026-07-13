@@ -2,7 +2,7 @@
   "division": "CSE-SY-2",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction). High confidence.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's updated timetable (Timetable-v1b, effective 6 Jul 26). High confidence.",
   "rooms": {
     "NC-01": "NC01, 1st Floor, Academic Complex",
     "NC-02": "NC02, 1st Floor, Academic Complex",
@@ -60,12 +60,14 @@
           "SY2-S2": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Sneha G Chavan"
           },
           "SY2-S3": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "PL",
+            "faculty": "Akanksha Akulwar"
           }
         }
       },
@@ -124,12 +126,14 @@
           "SY2-S3": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Sneha G Chavan"
           },
           "SY2-S4": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "PL",
+            "faculty": "Pratiksha Deshmukh"
           }
         }
       }
@@ -167,12 +171,14 @@
           "SY2-S4": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Sneha G Chavan"
           },
           "SY2-S5": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "PL",
+            "faculty": "Prachiti Deshpande"
           }
         }
       }
@@ -209,12 +215,14 @@
           "SY2-S5": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Sneha G Chavan"
           },
           "SY2-S1": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "PL",
+            "faculty": "Akanksha Akulwar"
           }
         }
       },
@@ -257,12 +265,14 @@
           "SY2-S1": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "DBMSL",
+            "faculty": "Sneha G Chavan"
           },
           "SY2-S2": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "PL"
+            "room": "PL",
+            "faculty": "Akanksha Akulwar"
           }
         }
       },
