@@ -3,6 +3,14 @@ import cseSy2 from "@/data/timetables/cse-sy-2.json";
 import cseSy3 from "@/data/timetables/cse-sy-3.json";
 import cseSy4 from "@/data/timetables/cse-sy-4.json";
 import aimlSy1 from "@/data/timetables/aiml-sy-1.json";
+import studentOec from "@/data/student-oec.json";
+import studentLanguage from "@/data/student-language.json";
+import studentHonorsMinor from "@/data/student-honors-minor.json";
+
+const OEC: Record<string, string> = studentOec;
+const LANGUAGE: Record<string, string> = studentLanguage;
+const HONORS_MINOR: Record<string, { title: string; kind: string }> =
+  studentHonorsMinor;
 
 export const DAY_KEYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] as const;
 export type DayKey = (typeof DAY_KEYS)[number];
@@ -58,7 +66,8 @@ export function getTimetable(branch: string, division: number): TimetableData | 
 export function resolveDayAgenda(
   timetable: TimetableData,
   day: DayKey,
-  batchLabel: string | null
+  batchLabel: string | null,
+  mis: string | null = null
 ): AgendaItem[] {
   const slots = timetable.schedule[day] ?? [];
   const items: AgendaItem[] = [];
@@ -77,16 +86,34 @@ export function resolveDayAgenda(
     }
 
     if (slot.type === "common" && slot.subject) {
-      const name = timetable.subjectNames[slot.subject] ?? slot.subject;
-      const facultyName = timetable.faculty[slot.subject];
+      let name = timetable.subjectNames[slot.subject] ?? slot.subject;
+      let facultyName: string | null =
+        timetable.faculty[slot.subject] ?? null;
       const roomName = slot.room ? timetable.rooms[slot.room] ?? slot.room : null;
+
+      if (slot.subject === "OE" && mis && OEC[mis]) {
+        name = OEC[mis];
+        facultyName = null;
+      } else if (slot.subject === "LL" && mis && LANGUAGE[mis]) {
+        name = LANGUAGE[mis];
+        facultyName = null;
+      } else if (slot.subject === "HM") {
+        if (mis && HONORS_MINOR[mis]) {
+          const entry = HONORS_MINOR[mis];
+          name = `${entry.kind}: ${entry.title}`;
+          facultyName = null;
+        } else {
+          continue;
+        }
+      }
+
       items.push({
         start: slot.start,
         end: slot.end,
         kind: "class",
         title: name,
         room: roomName,
-        faculty: facultyName ?? null,
+        faculty: facultyName,
       });
       continue;
     }

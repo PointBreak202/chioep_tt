@@ -23,7 +23,7 @@ export default function WeekPage() {
 
   const agenda = useMemo(() => {
     if (!timetable) return [];
-    return resolveDayAgenda(timetable, selectedDay, profile?.batchLabel ?? null);
+    return resolveDayAgenda(timetable, selectedDay, profile?.batchLabel ?? null, profile?.mis ?? null);
   }, [timetable, selectedDay, profile]);
 
   const touchStartX = useRef<number | null>(null);

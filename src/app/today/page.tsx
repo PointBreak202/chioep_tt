@@ -25,7 +25,7 @@ export default function TodayPage() {
 
   const agenda = useMemo(() => {
     if (!timetable) return [];
-    return resolveDayAgenda(timetable, day, profile?.batchLabel ?? null);
+    return resolveDayAgenda(timetable, day, profile?.batchLabel ?? null, profile?.mis ?? null);
   }, [timetable, day, profile]);
 
   if (loading || !profile) {
