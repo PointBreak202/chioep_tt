@@ -83,21 +83,21 @@ export default function AgendaList({ items, isToday, compact = false }: Props) {
                 )}
               </div>
               <p
-                className={`font-semibold text-text-primary ${
-                  compact ? "mt-0.5 text-sm" : "mt-1 text-sm"
+                className={`font-semibold leading-snug text-text-primary ${
+                  compact ? "mt-1 text-sm" : "mt-1 text-[15px]"
                 }`}
               >
                 {item.title}
               </p>
               {item.room && (
-                <p className="mt-0.5 flex items-center gap-1 text-xs text-text-secondary">
-                  <MapPin size={12} />
+                <p className="mt-1 flex items-center gap-1.5 text-[13px] text-text-secondary">
+                  <MapPin size={13} />
                   {item.room}
                 </p>
               )}
               {!compact && item.faculty && (
-                <p className="mt-0.5 flex items-center gap-1 text-xs text-text-tertiary">
-                  <User size={12} />
+                <p className="mt-0.5 flex items-center gap-1.5 text-[13px] text-text-tertiary">
+                  <User size={13} />
                   {item.faculty}
                 </p>
               )}

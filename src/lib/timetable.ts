@@ -31,7 +31,7 @@ interface ScheduleSlot {
   batches?: Record<string, BatchEntry>;
 }
 
-interface TimetableData {
+export interface TimetableData {
   division: string;
   branch: string;
   standing: string;
@@ -49,6 +49,10 @@ const TIMETABLES: Record<string, TimetableData> = {
   "CSE-4": cseSy4 as TimetableData,
   "AIML-1": aimlSy1 as TimetableData,
 };
+
+export function getAllTimetables(): { key: string; data: TimetableData }[] {
+  return Object.entries(TIMETABLES).map(([key, data]) => ({ key, data }));
+}
 
 export interface AgendaItem {
   start: string;

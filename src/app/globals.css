@@ -12,9 +12,9 @@
   --accent-soft: #a78bfa;
   --accent-glow: rgba(139, 92, 246, 0.35);
 
-  --text-primary: #f4f2fb;
-  --text-secondary: #a3a0b3;
-  --text-tertiary: #6b6880;
+  --text-primary: #f7f5fc;
+  --text-secondary: #bab7cc;
+  --text-tertiary: #918eaa;
 
   --live-now: #34d399;
   --danger: #fb7185;
@@ -41,11 +41,12 @@ body {
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  line-height: 1.45;
 }
 
 .glass {
   background: var(--surface);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -82,4 +83,15 @@ body {
 
 * {
   -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes splashIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
