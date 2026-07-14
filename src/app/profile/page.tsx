@@ -5,6 +5,7 @@ import AppShell from "@/components/layout/AppShell";
 import { useRequireProfile } from "@/lib/useProfile";
 import { clearStoredProfile } from "@/lib/profile";
 import { Loader2, LogOut, GraduationCap } from "lucide-react";
+import InstallButton from "@/components/InstallButton";
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -26,7 +27,10 @@ export default function ProfilePage() {
   return (
     <AppShell>
       <div className="px-5 pt-8">
-        <h1 className="text-2xl font-semibold text-text-primary">Profile</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-2xl font-semibold text-text-primary">Profile</h1>
+          <InstallButton />
+        </div>
 
         <div className="glass mt-6 flex items-center gap-4 rounded-2xl p-5">
           <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/15">

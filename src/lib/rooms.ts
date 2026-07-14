@@ -14,43 +14,32 @@ function timeToMinutes(t: string): number {
 }
 
 export function getRoomStatuses(day: DayKey, nowMinutes: number): RoomStatus[] {
-  const roomNames = new Map<string, string>();
+  const lectureRoomNames = new Map<string, string>();
   const occupancy = new Map<
     string,
     { start: number; end: number; label: string }[]
   >();
 
   for (const { data } of getAllTimetables()) {
-    for (const [code, name] of Object.entries(data.rooms)) {
-      if (!roomNames.has(code)) roomNames.set(code, name);
-    }
-
     const slots = data.schedule[day] ?? [];
     for (const slot of slots) {
       const start = timeToMinutes(slot.start);
       const end = timeToMinutes(slot.end);
 
       if (slot.type === "common" && slot.room) {
+        if (!lectureRoomNames.has(slot.room)) {
+          lectureRoomNames.set(slot.room, data.rooms[slot.room] ?? slot.room);
+        }
         const label = `${data.division} · ${data.subjectNames[slot.subject ?? ""] ?? slot.subject}`;
         const list = occupancy.get(slot.room) ?? [];
         list.push({ start, end, label });
         occupancy.set(slot.room, list);
       }
-
-      if (slot.type === "batchwise" && slot.batches) {
-        for (const [batchLabel, entry] of Object.entries(slot.batches)) {
-          if (!entry.room) continue;
-          const label = `${batchLabel} · ${entry.label ?? entry.subject}`;
-          const list = occupancy.get(entry.room) ?? [];
-          list.push({ start, end, label });
-          occupancy.set(entry.room, list);
-        }
-      }
     }
   }
 
   const statuses: RoomStatus[] = [];
-  for (const [code, name] of roomNames) {
+  for (const [code, name] of lectureRoomNames) {
     const bookings = occupancy.get(code) ?? [];
     const current = bookings.find(
       (b) => nowMinutes >= b.start && nowMinutes < b.end

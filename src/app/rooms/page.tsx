@@ -58,9 +58,9 @@ export default function RoomsPage() {
         <div className="glass mt-5 flex items-start gap-2 rounded-xl px-4 py-3">
           <TriangleAlert size={16} className="mt-0.5 shrink-0 text-amber-400" />
           <p className="text-xs text-text-secondary">
-            Based only on SY CSE (Div 1&ndash;4) and AIML (Div 1) schedules.
-            Rooms may still be in use by other branches or years we don&apos;t
-            have data for.
+            Lecture halls only (labs excluded). Based only on SY CSE
+            (Div 1&ndash;4) and AIML (Div 1) schedules. Rooms may still be in
+            use by other branches or years we don&apos;t have data for.
           </p>
         </div>
 
