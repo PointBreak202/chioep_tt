@@ -1,0 +1,317 @@
+[
+  {
+    "id": "archana-patil",
+    "name": "Archana Patil",
+    "designation": "",
+    "subjects": [],
+    "email": "",
+    "cabin": "",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 1"
+  },
+  {
+    "id": "pranoti-patil",
+    "name": "Pranoti Patil",
+    "designation": "",
+    "subjects": [],
+    "email": "",
+    "cabin": "",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 1 (Coordinator)"
+  },
+  {
+    "id": "abhijit-a-m",
+    "name": "Abhijit A. M.",
+    "designation": "Assistant Professor",
+    "subjects": [],
+    "email": "abhijit.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7301",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 2"
+  },
+  {
+    "id": "sneha-palimkar",
+    "name": "Sneha Palimkar",
+    "designation": "",
+    "subjects": [],
+    "email": "",
+    "cabin": "",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 2 (Coordinator)"
+  },
+  {
+    "id": "s-n-ghosh",
+    "name": "S. N. Ghosh",
+    "designation": "Assistant Professor",
+    "subjects": [],
+    "email": "gsn.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7310",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 3"
+  },
+  {
+    "id": "sujata-sonawane",
+    "name": "Sujata Sonawane",
+    "designation": "",
+    "subjects": [
+      "Data Structures and Algorithms \u2014 CSE SY Div 1",
+      "Data Structures and Algorithms \u2014 CSE SY Div 3"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 3 (Coordinator)"
+  },
+  {
+    "id": "t-r-pattanshetti",
+    "name": "T. R. Pattanshetti",
+    "designation": "Assistant Professor",
+    "subjects": [],
+    "email": "trp.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7324",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 4"
+  },
+  {
+    "id": "sneha-chavan",
+    "name": "Sneha Chavan",
+    "designation": "",
+    "subjects": [],
+    "email": "",
+    "cabin": "",
+    "advisor": true,
+    "advisorFor": "SY CSE Div 4 (Coordinator)"
+  },
+  {
+    "id": "anish-r-khobragade",
+    "name": "Anish R. Khobragade",
+    "designation": "Assistant Professor",
+    "subjects": [],
+    "email": "anishraj.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7318",
+    "advisor": true,
+    "advisorFor": "SY AIML"
+  },
+  {
+    "id": "h-d-gadade",
+    "name": "H. D. Gadade",
+    "designation": "Assistant Professor",
+    "subjects": [],
+    "email": "hdg.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7306",
+    "advisor": true,
+    "advisorFor": "SY AIML (Coordinator)"
+  },
+  {
+    "id": "afsha-akkalkot",
+    "name": "Afsha Akkalkot",
+    "designation": "",
+    "subjects": [
+      "Principles of Programming Languages \u2014 CSE SY Div 1",
+      "Principles of Programming Languages \u2014 CSE SY Div 3"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "akanksha-akulwar",
+    "name": "Akanksha Akulwar",
+    "designation": "",
+    "subjects": [
+      "DSA Lab \u2014 CSE SY Div 2"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "ankita-mali",
+    "name": "Ankita Mali",
+    "designation": "",
+    "subjects": [
+      "Data Engineering \u2014 AIML SY Div 1"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "archana-deokate",
+    "name": "Archana Deokate",
+    "designation": "",
+    "subjects": [
+      "Microprocessors \u2014 CSE SY Div 2",
+      "Microprocessors \u2014 CSE SY Div 4"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "ashwini-gawade",
+    "name": "Ashwini Gawade",
+    "designation": "",
+    "subjects": [
+      "Programming Language Paradigms \u2014 AIML SY Div 1"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "deepika-upadhey",
+    "name": "Deepika Upadhey",
+    "designation": "",
+    "subjects": [
+      "Principles of Programming Languages \u2014 CSE SY Div 2",
+      "Principles of Programming Languages \u2014 CSE SY Div 4",
+      "PPL Lab \u2014 CSE SY Div 4"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "dnyaneshwari-dhadwad",
+    "name": "Dnyaneshwari Dhadwad",
+    "designation": "",
+    "subjects": [
+      "PPL Lab \u2014 CSE SY Div 1"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "manish",
+    "name": "Manish",
+    "designation": "",
+    "subjects": [
+      "Data Structures and Complexity Theory \u2014 AIML SY Div 1"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "manisha-pawar",
+    "name": "Manisha Pawar",
+    "designation": "",
+    "subjects": [
+      "Data Structures and Algorithms \u2014 CSE SY Div 4",
+      "DSA Lab \u2014 CSE SY Div 4"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "prachiti-deshpande",
+    "name": "Prachiti Deshpande",
+    "designation": "",
+    "subjects": [
+      "DSA Lab \u2014 CSE SY Div 2",
+      "DSA Lab \u2014 CSE SY Div 3"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "pratiksha-deshmukh",
+    "name": "Pratiksha Deshmukh",
+    "designation": "Assistant Professor",
+    "subjects": [
+      "DSA Lab \u2014 CSE SY Div 2"
+    ],
+    "email": "dpr.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7307",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "satish-kumbhar",
+    "name": "Satish Kumbhar",
+    "designation": "Assistant Professor & Data Center Incharge",
+    "subjects": [
+      "Microprocessors \u2014 CSE SY Div 1",
+      "Microprocessors \u2014 CSE SY Div 3"
+    ],
+    "email": "ssk.comp@coep.ac.in",
+    "cabin": "CSE Dept, Ext. 7320",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "shreya-dayama",
+    "name": "Shreya Dayama",
+    "designation": "",
+    "subjects": [
+      "MP Lab \u2014 CSE SY Div 3"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "shriganeshrajkumar-togare",
+    "name": "Shriganeshrajkumar Togare",
+    "designation": "",
+    "subjects": [
+      "MP Lab \u2014 CSE SY Div 4"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "sneha-g-chavan",
+    "name": "Sneha G Chavan",
+    "designation": "",
+    "subjects": [
+      "PPL Lab \u2014 CSE SY Div 1",
+      "PPL Lab \u2014 CSE SY Div 2"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "snehal-banarase",
+    "name": "Snehal Banarase",
+    "designation": "",
+    "subjects": [
+      "MP Lab \u2014 CSE SY Div 3"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  },
+  {
+    "id": "tina-francis",
+    "name": "Tina Francis",
+    "designation": "",
+    "subjects": [
+      "Data Structures and Algorithms \u2014 CSE SY Div 2"
+    ],
+    "email": "",
+    "cabin": "",
+    "advisor": false,
+    "advisorFor": null
+  }
+]

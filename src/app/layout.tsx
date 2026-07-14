@@ -10,6 +10,7 @@ const inter = Inter({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "COEP Timetable",
   description: "Your class schedule, always at hand.",

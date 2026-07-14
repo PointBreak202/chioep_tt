@@ -6,6 +6,7 @@ import { useRequireProfile } from "@/lib/useProfile";
 import { clearStoredProfile } from "@/lib/profile";
 import { Loader2, LogOut, GraduationCap } from "lucide-react";
 import InstallButton from "@/components/InstallButton";
+import FacultyDirectory from "@/components/faculty/FacultyDirectory";
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -62,6 +63,8 @@ export default function ProfilePage() {
           <LogOut size={16} />
           Change MIS number
         </button>
+
+        <FacultyDirectory />
       </div>
     </AppShell>
   );

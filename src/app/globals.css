@@ -95,3 +95,28 @@ body {
     transform: translateY(0) scale(1);
   }
 }
+
+.accordion-grid {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-grid.accordion-open {
+  grid-template-rows: 1fr;
+}
+
+.accordion-grid > .accordion-inner {
+  overflow: hidden;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
