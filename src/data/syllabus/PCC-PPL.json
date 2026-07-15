@@ -1,0 +1,492 @@
+{
+  "code": "PCC-PPL",
+  "name": "Principles of Programming Languages",
+  "category": "PCC",
+  "branch": [
+    "CSE",
+    "AIML"
+  ],
+  "standing": "SY",
+  "semester": 3,
+  "credits": 3,
+  "courseOutcomes": [
+    {
+      "id": "CO1",
+      "text": "Explain, compare and discuss different language translation mechanisms."
+    },
+    {
+      "id": "CO2",
+      "text": "Explain fundamental concepts of different programming paradigms."
+    },
+    {
+      "id": "CO3",
+      "text": "Discuss and analyze factors that impact implementation of different programming language concepts and tradeoffs involved."
+    },
+    {
+      "id": "CO4",
+      "text": "Demonstrate ability to write simple programs using exception handling and event driven programming concepts."
+    },
+    {
+      "id": "CO5",
+      "text": "Suggest a suitable programming paradigm for a given problem."
+    },
+    {
+      "id": "CO6",
+      "text": "implement the solution for a given problem using different programming paradigms."
+    }
+  ],
+  "units": [
+    {
+      "title": "Preliminaries",
+      "hours": 5,
+      "topics": "Reasons for Studying Concepts of Programming Languages. Programming Domains. Language Evaluation Criteria. Influences on Language Design: computer architecture. Language Categories. Language Design Trade-Offs."
+    },
+    {
+      "title": "Implementation Methods",
+      "hours": 5,
+      "topics": "Compilation, Interpretation, Hybrid Implementation, Preprocessors. Programming Environments. Evolution of the Major Programming Languages (Pseudocodes, Assembly, C, C++, FORTRAN, Java). Introduction to assembly language instructions."
+    },
+    {
+      "title": "Syntax and Semantics Lexical and Syntax Analysis",
+      "hours": 8,
+      "topics": "Names, Bindings, and Scopes, Type checking, Strong Typing. Type Conversions. Short-Circuit Evaluation."
+    },
+    {
+      "title": "Statement-Level Control Structures Subprograms",
+      "hours": 6,
+      "topics": "Introduction. Fundamentals of Subprograms. Design Issues for Subprograms. Local Referencing Environments. Parameter- Passing Methods."
+    },
+    {
+      "title": "Exception Handling",
+      "hours": 6,
+      "topics": "Basic Concepts. Design Issues. Exception Handlers. Binding Exceptions to Handlers. Event Handling: Basic Concepts. Event handling with Programming Language. Comparison of Exception handling & Event Handling. GUI development"
+    },
+    {
+      "title": "Programming Paradigms",
+      "hours": 10,
+      "topics": "Introduction to Logic Programming. Introduction. Applications of Logic Programming. Introduction to Functional Programming. Introduction. Introduction to LISP. Garbage Collection Algorithms. A Comparison of Functional and Imperative Languages. Introduction to Procedural Programming. Introduction to Object Oriented Programming"
+    }
+  ],
+  "textbooks": [
+    {
+      "name": "Concepts Of Programming Languages",
+      "author": "Schesta R."
+    },
+    {
+      "name": "Programming Languages",
+      "author": "T. W. Pratt"
+    }
+  ],
+  "referenceBooks": [
+    {
+      "name": "Programming Languages Concepts",
+      "author": "Ghezzi C, Milano P., Jazayeri M."
+    },
+    {
+      "name": "Programming Language Pragmatics",
+      "author": "Michael L. Scott"
+    },
+    {
+      "name": "Foundations of Programming Languages",
+      "author": "Roosta S."
+    },
+    {
+      "name": "Programming Languages concepts & constructs",
+      "author": "Sethi R."
+    }
+  ],
+  "pdf": "/syllabus/PCC-PPL.pdf",
+  "teachingScheme": {
+    "lecturesPerWeek": "2 Hrs/ Week",
+    "labPerWeek": "2 Hrs/ Week",
+    "selfStudyPerWeek": "1 Hr/Week"
+  },
+  "evaluationScheme": [
+    {
+      "label": "Theory - MSE",
+      "marks": 30
+    },
+    {
+      "label": "Theory - TA",
+      "marks": 20
+    },
+    {
+      "label": "Theory - ESE",
+      "marks": 50
+    },
+    {
+      "label": "Laboratory - CIE",
+      "marks": 100
+    }
+  ],
+  "selfStudy": {
+    "title": "Self-study",
+    "hours": 12,
+    "topics": "Python as a multi-paradigm language for functional and logic programming. Case study of Ada, PERL, Go and Ruby for their features. Comparison of efficiency of compiled and interpreted languages in the form of assignments."
+  },
+  "webReferences": [
+    {
+      "text": "https://nptel.ac.in/courses/106102067",
+      "url": "https://nptel.ac.in/courses/106102067"
+    }
+  ],
+  "practicals": [
+    {
+      "id": "LA1",
+      "title": "Task 1: To study various language implementation methods.",
+      "items": [
+        {
+          "text": "Draw and explain the working of:",
+          "children": [
+            {
+              "text": "Compiler"
+            },
+            {
+              "text": "Interpreter"
+            },
+            {
+              "text": "Hybrid Implementation System"
+            },
+            {
+              "text": "Preprocessor"
+            }
+          ]
+        },
+        {
+          "text": "Write a simple C program and observe:",
+          "children": [
+            {
+              "text": "Source Code"
+            },
+            {
+              "text": "Object Code Generation"
+            },
+            {
+              "text": "Executable File Generation"
+            }
+          ]
+        },
+        {
+          "text": "Compare execution time of:",
+          "children": [
+            {
+              "text": "C Program"
+            },
+            {
+              "text": "Python Program for the same logic (e.g., factorial or array sum)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LA2",
+      "title": "Task 2: To understand low-level programming concepts.",
+      "items": [
+        {
+          "text": "Study basic assembly instructions:",
+          "children": [
+            {
+              "text": "MOV"
+            },
+            {
+              "text": "ADD"
+            },
+            {
+              "text": "SUB"
+            },
+            {
+              "text": "MUL"
+            },
+            {
+              "text": "DIV"
+            },
+            {
+              "text": "JMP"
+            }
+          ]
+        },
+        {
+          "text": "Write assembly-style algorithms for:",
+          "children": [
+            {
+              "text": "Addition of two numbers"
+            },
+            {
+              "text": "Largest among three numbers"
+            },
+            {
+              "text": "Sum of first N numbers"
+            }
+          ]
+        },
+        {
+          "text": "Explain how computer architecture influences language design."
+        },
+        {
+          "text": "Draw CPU-memory interaction diagram."
+        }
+      ]
+    },
+    {
+      "id": "LA3",
+      "title": "Task 3: To understand the front-end phases of language processing.",
+      "items": [
+        {
+          "text": "Given a C program, identify:",
+          "children": [
+            {
+              "text": "Keywords"
+            },
+            {
+              "text": "Identifiers"
+            },
+            {
+              "text": "Constants"
+            },
+            {
+              "text": "Operators"
+            },
+            {
+              "text": "Special Symbols"
+            }
+          ]
+        },
+        {
+          "text": "Construct a token table."
+        },
+        {
+          "text": "Draw parse trees for:",
+          "children": [
+            {
+              "text": "a+b*c"
+            },
+            {
+              "text": "(a+b)*(c-d)"
+            }
+          ]
+        },
+        {
+          "text": "Write a Python program to count:",
+          "children": [
+            {
+              "text": "Keywords"
+            },
+            {
+              "text": "Operators"
+            },
+            {
+              "text": "Identifiers from a source file."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LA4",
+      "title": "Task 4: To study variable visibility and type systems.",
+      "items": [
+        {
+          "text": "Write a C++ program demonstrating:",
+          "children": [
+            {
+              "text": "Local Scope"
+            },
+            {
+              "text": "Global Scope"
+            },
+            {
+              "text": "Block Scope"
+            }
+          ]
+        },
+        {
+          "text": "Demonstrate static binding and dynamic binding using C++ classes."
+        },
+        {
+          "text": "Explain strong typing and weak typing with examples."
+        },
+        {
+          "text": "Perform explicit and implicit type conversion examples."
+        }
+      ]
+    },
+    {
+      "id": "LA5",
+      "title": "Task 5: To understand expression evaluation mechanisms.",
+      "items": [
+        {
+          "text": "Write programs demonstrating:",
+          "children": [
+            {
+              "text": "Logical AND (&&)"
+            },
+            {
+              "text": "Logical OR (||)"
+            }
+          ]
+        },
+        {
+          "text": "Verify short-circuit evaluation using function calls."
+        },
+        {
+          "text": "Compare normal evaluation and short-circuit evaluation."
+        },
+        {
+          "text": "Measure the number of function calls executed in each case."
+        }
+      ]
+    },
+    {
+      "id": "LA6",
+      "title": "Task 6: To study function implementation and parameter passing techniques.",
+      "items": [
+        {
+          "text": "Implement programs demonstrating:",
+          "children": [
+            {
+              "text": "Call by Value"
+            },
+            {
+              "text": "Call by Reference"
+            }
+          ]
+        },
+        {
+          "text": "Explain Call by Result and Call by Value-Result using examples."
+        },
+        {
+          "text": "Write a menu-driven calculator using functions."
+        }
+      ]
+    },
+    {
+      "id": "LA7",
+      "title": "Task 7: To understand runtime exception management and event-driven programming.",
+      "items": [
+        {
+          "text": "Write programs for handling:",
+          "children": [
+            {
+              "text": "Divide-by-zero exception"
+            },
+            {
+              "text": "Invalid input exception"
+            }
+          ]
+        },
+        {
+          "text": "Develop a simple GUI application using Python Tkinter or Java Swing containing:",
+          "children": [
+            {
+              "text": "Button"
+            },
+            {
+              "text": "Text Box"
+            },
+            {
+              "text": "Label"
+            }
+          ]
+        },
+        {
+          "text": "Implement button click event handling."
+        }
+      ]
+    },
+    {
+      "id": "LA8",
+      "title": "Task 8: To understand functional programming features.",
+      "items": [
+        {
+          "text": "Implement programs using:",
+          "children": [
+            {
+              "text": "lambda()"
+            },
+            {
+              "text": "map()"
+            },
+            {
+              "text": "filter()"
+            },
+            {
+              "text": "reduce()"
+            }
+          ]
+        },
+        {
+          "text": "Compare procedural and functional solutions for:",
+          "children": [
+            {
+              "text": "Finding square of numbers"
+            },
+            {
+              "text": "Filtering even numbers"
+            }
+          ]
+        },
+        {
+          "text": "Explain advantages and limitations of functional programming."
+        }
+      ]
+    },
+    {
+      "id": "LA9",
+      "title": "Task 9: To explore different programming paradigms and modern languages.",
+      "items": [
+        {
+          "text": "Demonstrate Python as:",
+          "children": [
+            {
+              "text": "Procedural Language"
+            },
+            {
+              "text": "Object-Oriented Language"
+            },
+            {
+              "text": "Functional Language"
+            }
+          ]
+        },
+        {
+          "text": "Perform a case study of any two languages among:",
+          "children": [
+            {
+              "text": "Ada"
+            },
+            {
+              "text": "Perl"
+            },
+            {
+              "text": "Go"
+            },
+            {
+              "text": "Ruby"
+            }
+          ]
+        },
+        {
+          "text": "Compare:",
+          "children": [
+            {
+              "text": "Features"
+            },
+            {
+              "text": "Advantages"
+            },
+            {
+              "text": "Limitations"
+            },
+            {
+              "text": "Application Areas"
+            }
+          ]
+        },
+        {
+          "text": "Prepare a presentation (10-12 slides) summarizing findings."
+        }
+      ]
+    }
+  ]
+}

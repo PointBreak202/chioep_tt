@@ -1,0 +1,221 @@
+{
+  "code": "PCC02-MP",
+  "name": "Microprocessors",
+  "category": "PCC-02",
+  "branch": [
+    "CSE",
+    "AIML"
+  ],
+  "standing": "SY",
+  "semester": 3,
+  "credits": 3,
+  "courseOutcomes": [
+    {
+      "id": "CO1",
+      "text": "Design a microcomputer around 8086 CPU in minimum mode"
+    },
+    {
+      "id": "CO2",
+      "text": "Explain importance of power on reset circuit in the microcomputer"
+    },
+    {
+      "id": "CO3",
+      "text": "Develop assembly language programs for 8086 CPU"
+    },
+    {
+      "id": "CO4",
+      "text": "Explain and write programs for dedicated interrupts (Break Point, Overflow) of 8086"
+    },
+    {
+      "id": "CO5",
+      "text": "Design and Test interfacing of 8255, 8279, 8259, 8251, DMA and interfacing of 8237 to 8086"
+    },
+    {
+      "id": "CO6",
+      "text": "Design maximum mode CPU module for coprocessor configuration and multiprocessor system for local bus and system bus"
+    }
+  ],
+  "units": [
+    {
+      "title": "Design of Microcomputer",
+      "hours": 8,
+      "topics": "Von Pneumann's Principle, 8086 Architecture, Advantages of pipelining and segmentation, Simultaneity and concurrency, Demultiplexing of address and data bus, ALE, Even and Odd Bank, BHE, Static memory organisation, Design of memory map, Design of Interfacing of static memory to 8086. Reset in, Power on Reset Circuit, Bus cycle, Instruction cycle, Organising program for Basic Input Output System or Boot Strap loader after reset, clock input, 8284 clock driver, Design of minimum mode CPU module."
+    },
+    {
+      "title": "Programming with 8086",
+      "hours": 8,
+      "topics": "Programming model of 8086, Physical Address, Segment Address and Logical address/offset, Addressing modes, Instruction codes, default segment assignment, Instruction Groups, Flags, Important instructions of the group, flags, prefixes. Programming in Assembly Language of 8086. I/O interfacing. I/O mapped I/O versus Memory mapped I/O. In and OUT. Interfacing of 8 bit input port and outport in I/O mapped I/O mode. Disadvantage of memory mapped I/O in design of multitasking Microcomputer."
+    },
+    {
+      "title": "Interrupts",
+      "hours": 4,
+      "topics": "Interrupt structure of 8086, Dedicated Interrupts, flags associated with interrupts, hardware interrupts, non vectored interrupt, INTR and INTA, Software Interrupts"
+    },
+    {
+      "title": "I/O Interfacing",
+      "hours": 6,
+      "topics": "Program driven data transfer versus Interrupt driven data transfer, Interfacing design and demonstrating modes of 8255, simple I/O, Strobed input and output, bidirectional strobed I/O, BSR, 8279, encoded and decoded scan, 2 key lockout and N key rollover, sensor matrix, strobed keyboard, 8259, EOI, Non specific and specific EOI, Priority structure, Initialisation and Operational Command words, cascaded mode, buffered and non buffered."
+    },
+    {
+      "title": "Serial Communication, DMA mode",
+      "hours": 4,
+      "topics": "Serial I/O, Asynchronous and synchronous mode, design of serial communication using 8251 USART and RS232C drivers, Direct Memory Access and Interfacing of 8237"
+    },
+    {
+      "title": "Multiprocessing in 8086",
+      "hours": 8,
+      "topics": "Design of maximum mode CPU module, 8288 bus controller and 8289 bus arbiter, coprocessor configuration, Introduction to NDP8087, Resident Bus and System bus, loosely coupled and closely coupled configuration. Protected mode of 80286 for improved memory management and task switching for multiprogramming or multitasking, PVAM, Register set, segment descriptors, selector, virtual address space, single level and multiple level tasks, cache memory and its management"
+    }
+  ],
+  "textbooks": [
+    {
+      "name": "The 8086/8088 Family Design, Programming and Interfacing",
+      "author": "John P Uffenbeck"
+    }
+  ],
+  "referenceBooks": [
+    {
+      "name": "Microcomputer Systems: The 8086/8088 family Architecture, Programming and Design",
+      "author": "Yu-Cheng Liu, Glenn A. Gibson"
+    }
+  ],
+  "pdf": "/syllabus/PCC02-MP.pdf",
+  "teachingScheme": {
+    "lecturesPerWeek": "3 Hr/ week",
+    "labPerWeek": "2 Hr/ week",
+    "selfStudyPerWeek": "1 Hr/Week"
+  },
+  "evaluationScheme": [
+    {
+      "label": "Theory - MSE",
+      "marks": 30
+    },
+    {
+      "label": "Theory - TA",
+      "marks": 20
+    },
+    {
+      "label": "Theory - ESE",
+      "marks": 50
+    },
+    {
+      "label": "Laboratory - CIE",
+      "marks": 100
+    }
+  ],
+  "selfStudy": {
+    "title": "Self Study",
+    "hours": 12,
+    "topics": "Emu86 or suitable assembler, Study of assembler directives, Instruction templates, No. of Bus cycles and clock cycles for execution of instructions, All instructions of 8086, Prefixes, Programming practice in assembly language of 8086, Function calls of DOS and BIOS Interrupts for display and keyboard of IBM PC Interfacing and programming for 4x4 key matrix and 4 seven segment multiplexed displays to 8255"
+  },
+  "practicals": [
+    {
+      "id": "LA1",
+      "title": "Experiment: Study of 8086 based microcomputer trainer kit",
+      "items": [
+        {
+          "text": "Locate CPU8086, 74373 devices, 24 MHz crystal, 8284 clock generator, RAM and ROM devices on the microcomputer board. Find total memory capacity: Give table of memory map & usable space from RAM"
+        },
+        {
+          "text": "Use and describe following commands: D, E, R, T, G and U and A command."
+        },
+        {
+          "text": "Study programming model and different addressing modes using relevant MOV instructions."
+        },
+        {
+          "text": "Find opcodes for the instructions in c above using instructions templates of 8086."
+        }
+      ]
+    },
+    {
+      "id": "LA2",
+      "title": "Experiment: Assembler directives and instructions",
+      "items": [
+        {
+          "text": "Explain briefly various directives of assembler"
+        },
+        {
+          "text": "Study instructions of 8086 - All groups"
+        },
+        {
+          "text": "Write a program in assembly language of 8086 to add two 32 bit numbers. First number is stored from 0000H:2000H; second number is stored from 0000H:3000H. Store the result from 0000H:4000H onwards. Write your code in format: Address, Opcodes, Mnemonics, Comments"
+        }
+      ]
+    },
+    {
+      "id": "LA3",
+      "title": "Experiment: Subroutine-based addition",
+      "items": [
+        {
+          "text": "As a subroutine to add two 32 bit numbers when operand pointers are initialized in main program. First number is stored from 1000H:1000H and Second number is stored from 1000H:2000H. Result can be stored from 1000H:3000H."
+        },
+        {
+          "text": "Use this subroutine in a above in the main program to add two series of 32 bit numbers. Store the result from 1000H:3000H onwards. If carry is generated in double word addition store it at third location in sequence of the result."
+        }
+      ]
+    },
+    {
+      "id": "LA4",
+      "title": "Experiment: Microcomputer design around 8086",
+      "items": [
+        {
+          "text": "Design a microcomputer around 8086 CPU. Interface 64 KB of ROM and 64KB of RAM. The starting address of ROM is F0000H and starting address for RAM is 00000H. Create control signals for even and odd banks using BHE# and A0 Line. Interface 8255 programmable peripheral interface to 8086 with addresses 80H."
+        },
+        {
+          "text": "Write a program to interface 8255 in simple IO mode. Generate a square wave of 1 Hz frequency having 50% duty cycle at port A and B. Write program for initialization of 8255 and square wave generation. Write subroutine for 0.5 second delay."
+        }
+      ]
+    },
+    {
+      "id": "LA5",
+      "title": "Experiment: 8255 strobed I/O",
+      "items": [
+        {
+          "text": "Demonstrate 8255 for strobed input and strobed output in interrupt driven mode."
+        }
+      ]
+    },
+    {
+      "id": "LA6",
+      "title": "Experiment: 8255 bidirectional I/O and 8279 keyboard/display interfacing",
+      "items": [
+        {
+          "text": "Demonstrate 8255 for strobed bidirectional I/O in interrupt driven mode"
+        },
+        {
+          "text": "Interface 8279 to 8086 with starting address of 30H. Interface 4 seven segment LED displays and 4x4 key Matrix to 8279 in encoded scan and decoded scan mode."
+        }
+      ]
+    },
+    {
+      "id": "LA7",
+      "title": "Experiment: 8279 scan modes",
+      "items": [
+        {
+          "text": "Demonstrate 8279 in Encoded scan right and left entry seven segment display mode with n key roll over and 2 key lockout for keys, Decoded scan keyboard with n key roll over and 2 key lockout."
+        }
+      ]
+    },
+    {
+      "id": "LA8",
+      "title": "Experiment: Divide by zero and overflow interrupt",
+      "items": [
+        {
+          "text": "Write ISR for divide by zero interrupt to display DIVIDE BY ZERO ERROR. Test the Interrupt Service Subroutine by creating divide by zero error in the main program."
+        },
+        {
+          "text": "Repeat the exercise above to test Interrupt on overflow"
+        }
+      ]
+    }
+  ],
+  "extraSections": [
+    {
+      "heading": "Note",
+      "content": [
+        "1. All the Course outcomes 1 to 3 will be judged by 75% of the questions and outcomes 4, 5 and 6 will be judged by 25% of questions.",
+        "2. To measure CO3 and CO4, some questions may be based on self-study topics"
+      ]
+    }
+  ]
+}

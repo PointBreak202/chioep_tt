@@ -33,3 +33,26 @@ Every push to your main branch will auto-redeploy.
 1. Add the branch code and division roll ranges to `src/data/mis-mapping.json`.
 2. Add a new timetable JSON file under `src/data/timetables/`, following the existing schema (see any existing file, e.g. `cse-sy-1.json`).
 3. Register it in `TIMETABLES` in `src/lib/timetable.ts`.
+
+## Syllabus module
+
+The Syllabus tab shows the units, course outcomes, practicals, and textbooks for each subject, plus a Download PDF button for the original document.
+
+- Subject content lives in `src/data/syllabus/*.json`, one file per subject, shaped by the `Subject` type in `src/lib/syllabus/types.ts`.
+- The original PDFs live in `public/syllabus/*.pdf` and are served as static files — nothing parses a PDF at request time.
+- Which subjects a student sees is decided by `src/lib/syllabus/data.ts` (a branch/standing -> subject codes map), independent of the JSON files themselves so one subject JSON can be shared across branches.
+- JSON is generated once from plain text via `src/lib/syllabus/parse.ts` (`parseSyllabusText`). To regenerate it from the checked-in fixtures:
+
+  ```bash
+  node --experimental-strip-types scripts/generate-syllabus-json.mts
+  ```
+
+- `src/lib/syllabus/service.ts` re-exports the read path and documents (but does not implement) the intended flow for a future admin PDF-upload feature — there is no admin auth yet, so no write path is wired up.
+
+### Adding a new subject
+
+1. Add a `scripts/syllabus-source/<name>.txt` fixture with the syllabus text (headings: `Teaching Scheme`, `Evaluation Scheme`, `Course Outcomes`, `Course Content`, `Textbooks`, `Reference Books`, `Web References`, `Laboratory Assignments`/`Suggested List of Assignments`).
+2. Add its metadata (code, branch, standing, semester, credits, pdf path) to `SUBJECT_META` in `scripts/generate-syllabus-json.mts`.
+3. Drop the source PDF in `public/syllabus/<code>.pdf`.
+4. Run the generator command above.
+5. Register the subject code under the right branch/standing in `CURRICULUM` in `src/lib/syllabus/data.ts`.
