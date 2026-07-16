@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CalendarDays, LayoutList, User, DoorOpen, BookOpen } from "lucide-react";
+import { CalendarDays, LayoutList, User, Users2, BookOpen } from "lucide-react";
 
 const TABS = [
   { href: "/today", label: "Today", icon: LayoutList },
   { href: "/week", label: "Week", icon: CalendarDays },
-  { href: "/rooms", label: "Rooms", icon: DoorOpen },
+  { href: "/meet", label: "Meet", icon: Users2 },
   { href: "/syllabus", label: "Syllabus", icon: BookOpen },
   { href: "/profile", label: "Profile", icon: User },
 ];
