@@ -1,0 +1,116 @@
+{
+  "code": "OEC-24015",
+  "name": "Numerical Methods",
+  "category": "OEC",
+  "branch": [
+    "CSE",
+    "AIML"
+  ],
+  "standing": "SY",
+  "semester": 3,
+  "credits": 2,
+  "courseOutcomes": [
+    {
+      "id": "CO1",
+      "text": "know and recall core knowledge of the syllabus."
+    },
+    {
+      "id": "CO2",
+      "text": "understand basic concepts."
+    },
+    {
+      "id": "CO3",
+      "text": "analyze the problem and apply the appropriate concept."
+    },
+    {
+      "id": "CO4",
+      "text": "give reasoning."
+    },
+    {
+      "id": "CO5",
+      "text": "apply core concepts to new situations."
+    }
+  ],
+  "units": [
+    {
+      "title": "Numerical Solution of Algebraic and Transcendental Equations",
+      "hours": 6,
+      "topics": "Bisection Method, Secant Method, Regula-Falsi Method, Newton-Raphson Method, Successive Approximation Method, Applications."
+    },
+    {
+      "title": "Solution of Linear Simultaneous Equations",
+      "hours": 6,
+      "topics": "Homogeneous/Non-homogeneous systems, Gauss Elimination, Gauss Jordan, Gauss-Seidel Methods, LU-Decomposition, Cholesky Method, Applications."
+    },
+    {
+      "title": "Interpolation and Numerical Differentiation",
+      "hours": 6,
+      "topics": "Lagrange's Interpolation, Newton's forward, backward and central difference method, divided difference method, Inverse Interpolation, Applications. Numerical Differentiation: Forward, Backward and Central Difference Methods, Applications."
+    },
+    {
+      "title": "Numerical Integration and Curve Fitting",
+      "hours": 6,
+      "topics": "Trapezoidal Rule, Simpson 1/3rd and 3/8th Rule, Gauss Quadrature - Two and Three Point Formula, Applications. Curve Fitting: least square criteria - 1st and 2nd Degree, Applications."
+    },
+    {
+      "title": "Numerical Solution of Ordinary Differential Equations",
+      "hours": 4,
+      "topics": "Taylor Series Method, Euler Method, Modified Euler Method, Runge Kutta 2nd and 4th order method, Simultaneous Differential Equations and Second Order Differential Equations, Applications."
+    }
+  ],
+  "textbooks": [
+    {
+      "name": "Numerical Methods for Engineers",
+      "author": "Chapra, S.C. & Canal, R. P."
+    }
+  ],
+  "referenceBooks": [
+    {
+      "name": "Numerical Methods",
+      "author": "Balagurusamy, E."
+    },
+    {
+      "name": "Computer Oriented Numerical Methods",
+      "author": "Rajaraman, V."
+    },
+    {
+      "name": "Introductory Methods of Numerical Analysis",
+      "author": "Sastry, S. S."
+    },
+    {
+      "name": "Numerical Methods for Scientific and Engineering Computations",
+      "author": "Jain, M.K., Iyengar, S.R.K. and Jain, R.K."
+    },
+    {
+      "name": "Numerical Methods in Science and Engineering - A practical Approach",
+      "author": "Rajasekaran, S."
+    },
+    {
+      "name": "Optimization Theory and Applications",
+      "author": "Rao, S.S."
+    },
+    {
+      "name": "Computed Oriented Numerical Methods",
+      "author": "R.S. Salaria"
+    }
+  ],
+  "pdf": "/syllabus/OEC-24015.pdf",
+  "teachingScheme": {
+    "lecturesPerWeek": "2 Hrs/Week",
+    "selfStudyPerWeek": "1 Hr/Week"
+  },
+  "evaluationScheme": [
+    {
+      "label": "Theory - TA",
+      "marks": 20
+    },
+    {
+      "label": "Theory - MSE",
+      "marks": 30
+    },
+    {
+      "label": "Theory - ESE",
+      "marks": 50
+    }
+  ]
+}

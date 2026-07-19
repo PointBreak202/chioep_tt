@@ -38,6 +38,14 @@ const SUBJECT_META: Record<string, SyllabusMeta> = {
     credits: 3,
     pdf: "/syllabus/PCC02-MP.pdf",
   },
+  "numerical-methods.txt": {
+    code: "OEC-24015",
+    branch: ["CSE", "AIML"],
+    standing: "SY",
+    semester: 3,
+    credits: 2,
+    pdf: "/syllabus/OEC-24015.pdf",
+  },
 };
 
 mkdirSync(OUTPUT_DIR, { recursive: true });

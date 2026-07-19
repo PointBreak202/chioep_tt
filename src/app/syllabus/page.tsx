@@ -13,7 +13,7 @@ export default function SyllabusPage() {
 
   const subjects = useMemo(() => {
     if (!profile) return [];
-    return getSubjectSummaries(profile.branchCode, profile.standing);
+    return getSubjectSummaries(profile.branchCode, profile.standing, profile.mis);
   }, [profile]);
 
   if (loading || !profile) {

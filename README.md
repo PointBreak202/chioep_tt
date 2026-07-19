@@ -55,4 +55,6 @@ The Syllabus tab shows the units, course outcomes, practicals, and textbooks for
 2. Add its metadata (code, branch, standing, semester, credits, pdf path) to `SUBJECT_META` in `scripts/generate-syllabus-json.mts`.
 3. Drop the source PDF in `public/syllabus/<code>.pdf`.
 4. Run the generator command above.
-5. Register the subject code under the right branch/standing in `CURRICULUM` in `src/lib/syllabus/data.ts`.
+5. Register the subject:
+   - **Compulsory subject** (every student in that branch/standing takes it, e.g. PPL, Microprocessors): add its code to `CURRICULUM` in `src/lib/syllabus/data.ts`.
+   - **Open Elective** (only some students take it, e.g. Numerical Methods — CSE/AIML SY students are split across 8 different electives, see `src/data/student-oec.json`): do **not** add it to `CURRICULUM`. Instead just give the subject the category `"OEC"` in its source text's title line (`(OEC) Subject Name`) — `getSubjectSummaries` automatically matches a student's own elective choice by name and shows it only to them. This avoids showing a student a syllabus for an elective they didn't actually pick.

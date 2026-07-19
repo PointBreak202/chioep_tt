@@ -1,0 +1,44 @@
+(OEC) Numerical Methods
+
+Teaching Scheme
+Lectures: 2 Hrs/Week
+Self-Study: 1 Hr/Week
+
+Evaluation Scheme
+Theory: TA:20 Marks, MSE:30 Marks, ESE:50 Marks
+
+Course outcomes
+Students will be able to:
+1. know and recall core knowledge of the syllabus.
+2. understand basic concepts.
+3. analyze the problem and apply the appropriate concept.
+4. give reasoning.
+5. apply core concepts to new situations.
+
+Course content
+Numerical Solution of Algebraic and Transcendental Equations: [6 Hrs]
+Bisection Method, Secant Method, Regula-Falsi Method, Newton-Raphson Method, Successive Approximation Method, Applications.
+
+Solution of Linear Simultaneous Equations: [6 Hrs]
+Homogeneous/Non-homogeneous systems, Gauss Elimination, Gauss Jordan, Gauss-Seidel Methods, LU-Decomposition, Cholesky Method, Applications.
+
+Interpolation and Numerical Differentiation: [6 Hrs]
+Lagrange's Interpolation, Newton's forward, backward and central difference method, divided difference method, Inverse Interpolation, Applications. Numerical Differentiation: Forward, Backward and Central Difference Methods, Applications.
+
+Numerical Integration and Curve Fitting: [6 Hrs]
+Trapezoidal Rule, Simpson 1/3rd and 3/8th Rule, Gauss Quadrature - Two and Three Point Formula, Applications. Curve Fitting: least square criteria - 1st and 2nd Degree, Applications.
+
+Numerical Solution of Ordinary Differential Equations: [4 Hrs]
+Taylor Series Method, Euler Method, Modified Euler Method, Runge Kutta 2nd and 4th order method, Simultaneous Differential Equations and Second Order Differential Equations, Applications.
+
+Textbooks
+1. Chapra, S.C. & Canal, R. P., "Numerical Methods for Engineers", 5th Ed., Tata McGraw Hill Publication.
+
+Reference Books
+1. Balagurusamy, E., "Numerical Methods", Tata McGraw Hill Publication.
+2. Rajaraman, V., "Computer Oriented Numerical Methods", Prentice Hall of India Ltd.
+3. Sastry, S. S., "Introductory Methods of Numerical Analysis", Prentice Hall of India Ltd.
+4. Jain, M.K., Iyengar, S.R.K. and Jain, R.K., "Numerical Methods for Scientific and Engineering Computations", 5th Ed., New Age International Ltd.
+5. Rajasekaran, S., "Numerical Methods in Science and Engineering - A practical Approach", S. Chand and Co. Ltd.
+6. Rao, S.S., "Optimization Theory and Applications", New Age International Ltd.
+7. R.S. Salaria, "Computed Oriented Numerical Methods", 5th Edition, Khanna Publishing Company Private Limited, New Delhi.
