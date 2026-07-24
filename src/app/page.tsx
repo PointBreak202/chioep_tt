@@ -10,18 +10,26 @@ import type { ResolvedProfile } from "@/lib/mis";
 
 export default function RootPage() {
   const router = useRouter();
-  const [existing] = useState(() =>
-    typeof window === "undefined" ? null : getStoredProfile()
-  );
+  const [status, setStatus] = useState<{
+    checked: boolean;
+    existing: ReturnType<typeof getStoredProfile>;
+  }>({ checked: false, existing: null });
   const [pendingProfile, setPendingProfile] = useState<ResolvedProfile | null>(
     null
   );
 
   useEffect(() => {
-    if (existing) {
+    // Reading localStorage must happen after mount to avoid a
+    // server/client hydration mismatch (see root cause fix above).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setStatus({ checked: true, existing: getStoredProfile() });
+  }, []);
+
+  useEffect(() => {
+    if (status.existing) {
       router.replace("/today");
     }
-  }, [existing, router]);
+  }, [status.existing, router]);
 
   function handleResolved(profile: ResolvedProfile) {
     if (profile.needsManualBatch) {
@@ -38,7 +46,7 @@ export default function RootPage() {
     router.replace("/today");
   }
 
-  if (existing) {
+  if (!status.checked || status.existing) {
     return (
       <div className="flex min-h-screen items-center justify-center">
         <Loader2 size={24} className="animate-spin text-accent-soft" />

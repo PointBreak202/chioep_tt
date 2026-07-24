@@ -61,6 +61,8 @@ export interface AgendaItem {
   title: string;
   room: string | null;
   faculty: string | null;
+  /** Stable identifier for the subject, used to attach subject todos. Null for lunch/free periods. */
+  subjectKey: string | null;
 }
 
 export function getTimetable(branch: string, division: number): TimetableData | null {
@@ -85,6 +87,7 @@ export function resolveDayAgenda(
         title: "Lunch",
         room: null,
         faculty: null,
+        subjectKey: null,
       });
       continue;
     }
@@ -118,6 +121,7 @@ export function resolveDayAgenda(
         title: name,
         room: roomName,
         faculty: facultyName,
+        subjectKey: slot.subject,
       });
       continue;
     }
@@ -141,6 +145,7 @@ export function resolveDayAgenda(
         title,
         room: roomName,
         faculty: facultyName ?? null,
+        subjectKey: entry.subject,
       });
     }
   }
@@ -150,4 +155,48 @@ export function resolveDayAgenda(
 
 export function todayDayKey(): DayKey {
   return DAY_KEYS[new Date().getDay()];
+}
+
+function timeStrToMinutes(t: string): number {
+  const [h, m] = t.split(":").map(Number);
+  return h * 60 + m;
+}
+
+export interface AgendaSplit {
+  current: AgendaItem | null;
+  upcoming: AgendaItem[];
+}
+
+/**
+ * Splits a day's agenda into the currently-running item (if any) and the
+ * remaining upcoming items, based on the given time-of-day in minutes
+ * since midnight. Completed items are excluded entirely.
+ */
+export function splitAgendaByNow(
+  items: AgendaItem[],
+  nowMinutes: number
+): AgendaSplit {
+  let current: AgendaItem | null = null;
+  const upcoming: AgendaItem[] = [];
+
+  for (const item of items) {
+    const startM = timeStrToMinutes(item.start);
+    const endM = timeStrToMinutes(item.end);
+
+    if (nowMinutes >= startM && nowMinutes < endM) {
+      current = item;
+    } else if (startM > nowMinutes) {
+      upcoming.push(item);
+    }
+  }
+
+  return { current, upcoming };
+}
+
+/**
+ * Minutes remaining until the given end time ("HH:MM"), relative to
+ * nowMinutes (minutes since midnight). Never negative.
+ */
+export function minutesUntil(endTime: string, nowMinutes: number): number {
+  return Math.max(0, timeStrToMinutes(endTime) - nowMinutes);
 }

@@ -2,9 +2,16 @@
 
 import { useMemo } from "react";
 import AppShell from "@/components/layout/AppShell";
-import AgendaList from "@/components/agenda/AgendaList";
+import CurrentClassCard from "@/components/agenda/CurrentClassCard";
+import UpcomingClasses from "@/components/agenda/UpcomingClasses";
+import TodoSection from "@/components/todo/TodoSection";
 import { useRequireProfile } from "@/lib/useProfile";
-import { getTimetable, resolveDayAgenda, todayDayKey } from "@/lib/timetable";
+import {
+  getTimetable,
+  resolveDayAgenda,
+  splitAgendaByNow,
+  todayDayKey,
+} from "@/lib/timetable";
 import { getGreeting } from "@/lib/greeting";
 import { Loader2, TriangleAlert } from "lucide-react";
 
@@ -23,10 +30,22 @@ export default function TodayPage() {
     return getTimetable(profile.branchCode, profile.division);
   }, [profile]);
 
+  const isWeekend = day === "Sat" || day === "Sun";
+
   const agenda = useMemo(() => {
-    if (!timetable) return [];
+    if (!timetable || isWeekend) return [];
     return resolveDayAgenda(timetable, day, profile?.batchLabel ?? null, profile?.mis ?? null);
-  }, [timetable, day, profile]);
+  }, [timetable, day, profile, isWeekend]);
+
+  const nowMinutes = useMemo(() => {
+    const now = new Date();
+    return now.getHours() * 60 + now.getMinutes();
+  }, []);
+
+  const { current, upcoming } = useMemo(
+    () => splitAgendaByNow(agenda, nowMinutes),
+    [agenda, nowMinutes]
+  );
 
   if (loading || !profile) {
     return (
@@ -36,7 +55,6 @@ export default function TodayPage() {
     );
   }
 
-  const isWeekend = day === "Sat" || day === "Sun";
   const lowConfidence = timetable?.confidence.includes("LOW") || timetable?.confidence.includes("NOT VERIFIED");
   const greeting = getGreeting(profile.mis, profile.branchCode);
 
@@ -60,7 +78,7 @@ export default function TodayPage() {
           </div>
         )}
 
-        {timetable && lowConfidence && (
+        {timetable && lowConfidence && !isWeekend && (
           <div className="glass mt-5 flex items-start gap-2 rounded-xl border-amber-400/30 px-4 py-3">
             <TriangleAlert size={16} className="mt-0.5 shrink-0 text-amber-400" />
             <p className="text-xs text-text-secondary">
@@ -70,11 +88,20 @@ export default function TodayPage() {
           </div>
         )}
 
-        {timetable && isWeekend ? (
-          <AgendaList items={[]} isToday />
-        ) : (
-          timetable && <AgendaList items={agenda} isToday />
+        {timetable && (
+          <>
+            {isWeekend ? (
+              <CurrentClassCard current={null} hasAnyClassesToday={false} />
+            ) : (
+              <>
+                <CurrentClassCard current={current} hasAnyClassesToday={agenda.length > 0} />
+                <UpcomingClasses upcoming={upcoming} />
+              </>
+            )}
+          </>
         )}
+
+        <TodoSection />
       </div>
     </AppShell>
   );

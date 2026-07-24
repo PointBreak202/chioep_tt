@@ -4,8 +4,15 @@ import { useMemo, useRef, useState } from "react";
 import AppShell from "@/components/layout/AppShell";
 import AgendaList from "@/components/agenda/AgendaList";
 import DayTabs from "@/components/agenda/DayTabs";
+import SubjectTodoModal from "@/components/todo/SubjectTodoModal";
 import { useRequireProfile } from "@/lib/useProfile";
-import { getTimetable, resolveDayAgenda, todayDayKey, type DayKey } from "@/lib/timetable";
+import {
+  getTimetable,
+  resolveDayAgenda,
+  todayDayKey,
+  type AgendaItem,
+  type DayKey,
+} from "@/lib/timetable";
 import { Loader2 } from "lucide-react";
 
 const VALID_WEEK_DAYS: DayKey[] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -15,6 +22,7 @@ export default function WeekPage() {
   const today = todayDayKey();
   const defaultDay = VALID_WEEK_DAYS.includes(today) ? today : "Mon";
   const [selectedDay, setSelectedDay] = useState<DayKey>(defaultDay);
+  const [activeSubject, setActiveSubject] = useState<AgendaItem | null>(null);
 
   const timetable = useMemo(() => {
     if (!profile) return null;
@@ -82,10 +90,19 @@ export default function WeekPage() {
               items={agenda}
               isToday={selectedDay === today}
               compact
+              onItemClick={(item) => setActiveSubject(item)}
             />
           </div>
         )}
       </div>
+
+      {activeSubject && activeSubject.subjectKey && (
+        <SubjectTodoModal
+          subjectKey={activeSubject.subjectKey}
+          subjectTitle={activeSubject.title}
+          onClose={() => setActiveSubject(null)}
+        />
+      )}
     </AppShell>
   );
 }
