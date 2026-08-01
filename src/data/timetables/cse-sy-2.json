@@ -2,7 +2,7 @@
   "division": "CSE-SY-2",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v3 (effective 20 Jul 26). High confidence.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v4 (effective 27 Jul 26). High confidence.",
   "rooms": {
     "NC-01": "NC-01, 1st Floor, Academic Complex",
     "NC-02": "NC-02, 1st Floor, Academic Complex",
@@ -61,13 +61,13 @@
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "FOSS2",
-            "faculty": "Akanksha Akulwar"
+            "faculty": "Savita Adhav"
           },
           "SY2-S3": {
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Sneha G Chavan"
+            "faculty": "Sneha Chavan"
           }
         }
       },
@@ -127,13 +127,13 @@
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "FOSS2",
-            "faculty": "Prachiti Deshpande"
+            "faculty": "Savita Adhav"
           },
           "SY2-S4": {
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Sneha G Chavan"
+            "faculty": "Sneha Chavan"
           }
         }
       }
@@ -172,13 +172,13 @@
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "FOSS2",
-            "faculty": "Prachiti Deshpande"
+            "faculty": "Savita Adhav"
           },
           "SY2-S5": {
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Sneha G Chavan"
+            "faculty": "Sneha Chavan"
           }
         }
       }
@@ -223,13 +223,13 @@
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "FOSS2",
-            "faculty": "Prachiti Deshpande"
+            "faculty": "Savita Adhav"
           },
           "SY2-S1": {
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Sneha G Chavan"
+            "faculty": "Sneha Chavan"
           }
         }
       },
@@ -266,13 +266,13 @@
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "FOSS2",
-            "faculty": "Akanksha Akulwar"
+            "faculty": "Savita Adhav"
           },
           "SY2-S2": {
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Sneha G Chavan"
+            "faculty": "Sneha Chavan"
           }
         }
       },

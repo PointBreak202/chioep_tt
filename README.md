@@ -58,3 +58,12 @@ The Syllabus tab shows the units, course outcomes, practicals, and textbooks for
 5. Register the subject:
    - **Compulsory subject** (every student in that branch/standing takes it, e.g. PPL, Microprocessors): add its code to `CURRICULUM` in `src/lib/syllabus/data.ts`.
    - **Open Elective** (only some students take it, e.g. Numerical Methods — CSE/AIML SY students are split across 8 different electives, see `src/data/student-oec.json`): do **not** add it to `CURRICULUM`. Instead just give the subject the category `"OEC"` in its source text's title line (`(OEC) Subject Name`) — `getSubjectSummaries` automatically matches a student's own elective choice by name and shows it only to them. This avoids showing a student a syllabus for an elective they didn't actually pick.
+
+## To-do lists
+
+Today has two kinds of to-dos, both stored in localStorage (no backend, per-device like the rest of the app):
+
+- **General tasks** — plain personal to-dos, managed from the To-do section on Today.
+- **Subject tasks** — tap any class on the Week tab to open a per-subject to-do list (e.g. "DSA Lab" tasks tracked separately from "PPL" tasks). Subject tasks are keyed by `subjectKey` on each `AgendaItem` (the raw subject code, e.g. `"DSA"`), so tasks stay attached to the subject across different days/divisions showing the same subject.
+
+Data lives in `src/lib/todos.ts`; `src/lib/useTodos.ts` is the React hook that keeps components in sync via a custom `coep-tt-todos-changed` window event (works across components without prop drilling or a state library).

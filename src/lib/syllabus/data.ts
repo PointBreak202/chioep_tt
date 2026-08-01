@@ -2,6 +2,7 @@ import type { Subject, SubjectSummary } from "./types";
 
 import pccPpl from "@/data/syllabus/PCC-PPL.json";
 import pcc02Mp from "@/data/syllabus/PCC02-MP.json";
+import pccDsa from "@/data/syllabus/PCC-DSA.json";
 import oec24015 from "@/data/syllabus/OEC-24015.json";
 import studentOec from "@/data/student-oec.json";
 
@@ -12,17 +13,18 @@ import studentOec from "@/data/student-oec.json";
 const SUBJECTS: Record<string, Subject> = {
   "PCC-PPL": pccPpl as Subject,
   "PCC02-MP": pcc02Mp as Subject,
+  "PCC-DSA": pccDsa as Subject,
   "OEC-24015": oec24015 as Subject,
 };
 
 // Maps a student's (branch, standing) to the *compulsory* subject codes they
 // should see. Kept separate from SUBJECTS so the same subject JSON can be
-// shared across branches (e.g. PPL and Microprocessors are common to CSE
-// and AIML) without duplicating data, and so adding "FY" / "TY" / "BTech"
+// shared across branches (e.g. PPL, Microprocessors, and DSA are common to
+// CSE and AIML) without duplicating data, and so adding "FY" / "TY" / "BTech"
 // later is just a new entry here, matching the extensibility note in
 // README's "Adding a new division or branch later" section for timetables.
 //
-// Open Electives are deliberately NOT listed here: unlike PPL/Microprocessors,
+// Open Electives are deliberately NOT listed here: unlike PPL/Microprocessors/DSA,
 // not every student in a branch takes the same elective (see
 // src/data/student-oec.json — CSE/AIML SY students are split across 8
 // different electives). An elective subject is shown only to the students
@@ -30,10 +32,10 @@ const SUBJECTS: Record<string, Subject> = {
 // than the branch/standing curriculum map.
 const CURRICULUM: Record<string, Record<string, string[]>> = {
   CSE: {
-    SY: ["PCC-PPL", "PCC02-MP"],
+    SY: ["PCC-PPL", "PCC02-MP", "PCC-DSA"],
   },
   AIML: {
-    SY: ["PCC-PPL", "PCC02-MP"],
+    SY: ["PCC-PPL", "PCC02-MP", "PCC-DSA"],
   },
 };
 

@@ -7,6 +7,7 @@ interface Props {
   items: AgendaItem[];
   isToday: boolean;
   compact?: boolean;
+  onItemClick?: (item: AgendaItem) => void;
 }
 
 function timeToMinutes(t: string): number {
@@ -29,7 +30,7 @@ const KIND_STYLES: Record<AgendaItem["kind"], { dot: string; icon: React.ReactNo
   unverified: { dot: "bg-amber-400", icon: <AlertTriangle size={14} /> },
 };
 
-export default function AgendaList({ items, isToday, compact = false }: Props) {
+export default function AgendaList({ items, isToday, compact = false, onItemClick }: Props) {
   if (items.length === 0) {
     return (
       <div className="glass mt-6 flex flex-col items-center gap-3 rounded-2xl px-6 py-10 text-center">
@@ -68,9 +69,18 @@ export default function AgendaList({ items, isToday, compact = false }: Props) {
             </div>
 
             <div
+              onClick={
+                onItemClick && item.subjectKey
+                  ? () => onItemClick(item)
+                  : undefined
+              }
+              role={onItemClick && item.subjectKey ? "button" : undefined}
+              tabIndex={onItemClick && item.subjectKey ? 0 : undefined}
               className={`glass flex-1 rounded-xl ${compact ? "px-3 py-2" : "px-4 py-3"} ${
                 isLive ? "border-accent-soft/50" : ""
-              } ${item.kind === "unverified" ? "border-amber-400/30" : ""}`}
+              } ${item.kind === "unverified" ? "border-amber-400/30" : ""} ${
+                onItemClick && item.subjectKey ? "cursor-pointer active:opacity-80" : ""
+              }`}
             >
               <div className="flex items-center justify-between">
                 <p className="text-xs font-medium text-text-secondary">

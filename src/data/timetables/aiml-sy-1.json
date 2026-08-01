@@ -2,7 +2,7 @@
   "division": "AIML-SY-1",
   "branch": "AIML",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v3 (effective 20 Jul 26). High confidence, including DSY batch slots.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction). Re-confirmed unchanged in the department's Timetable-v4 (effective 27 Jul 26). High confidence, including DSY batch slots.",
   "rooms": {
     "NC-02": "NC-02, 1st Floor, Academic Complex",
     "NC-27": "NC-27, 2nd Floor, Academic Complex",

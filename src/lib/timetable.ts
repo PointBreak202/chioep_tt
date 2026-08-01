@@ -6,6 +6,7 @@ import aimlSy1 from "@/data/timetables/aiml-sy-1.json";
 import studentOec from "@/data/student-oec.json";
 import studentLanguage from "@/data/student-language.json";
 import studentHonorsMinor from "@/data/student-honors-minor.json";
+import { OEC_SESSIONS, HONORS_MINOR_SESSIONS } from "@/data/elective-sessions";
 
 const OEC: Record<string, string> = studentOec;
 const LANGUAGE: Record<string, string> = studentLanguage;
@@ -61,6 +62,8 @@ export interface AgendaItem {
   title: string;
   room: string | null;
   faculty: string | null;
+  /** Stable identifier for the subject, used to attach subject todos. Null for lunch/free periods. */
+  subjectKey: string | null;
 }
 
 export function getTimetable(branch: string, division: number): TimetableData | null {
@@ -85,6 +88,7 @@ export function resolveDayAgenda(
         title: "Lunch",
         room: null,
         faculty: null,
+        subjectKey: null,
       });
       continue;
     }
@@ -93,11 +97,13 @@ export function resolveDayAgenda(
       let name = timetable.subjectNames[slot.subject] ?? slot.subject;
       let facultyName: string | null =
         timetable.faculty[slot.subject] ?? null;
-      const roomName = slot.room ? timetable.rooms[slot.room] ?? slot.room : null;
+      let roomName = slot.room ? timetable.rooms[slot.room] ?? slot.room : null;
 
       if (slot.subject === "OE" && mis && OEC[mis]) {
         name = OEC[mis];
-        facultyName = null;
+        const session = OEC_SESSIONS[name.toLowerCase()];
+        facultyName = session?.faculty ?? null;
+        roomName = session?.room ?? null;
       } else if (slot.subject === "LL" && mis && LANGUAGE[mis]) {
         name = LANGUAGE[mis];
         facultyName = null;
@@ -105,7 +111,9 @@ export function resolveDayAgenda(
         if (mis && HONORS_MINOR[mis]) {
           const entry = HONORS_MINOR[mis];
           name = `${entry.kind}: ${entry.title}`;
-          facultyName = null;
+          const session = HONORS_MINOR_SESSIONS[entry.title.toLowerCase()];
+          facultyName = session?.faculty ?? null;
+          roomName = session?.room ?? null;
         } else {
           continue;
         }
@@ -118,6 +126,7 @@ export function resolveDayAgenda(
         title: name,
         room: roomName,
         faculty: facultyName,
+        subjectKey: slot.subject,
       });
       continue;
     }
@@ -141,6 +150,7 @@ export function resolveDayAgenda(
         title,
         room: roomName,
         faculty: facultyName ?? null,
+        subjectKey: entry.subject,
       });
     }
   }
@@ -150,4 +160,48 @@ export function resolveDayAgenda(
 
 export function todayDayKey(): DayKey {
   return DAY_KEYS[new Date().getDay()];
+}
+
+function timeStrToMinutes(t: string): number {
+  const [h, m] = t.split(":").map(Number);
+  return h * 60 + m;
+}
+
+export interface AgendaSplit {
+  current: AgendaItem | null;
+  upcoming: AgendaItem[];
+}
+
+/**
+ * Splits a day's agenda into the currently-running item (if any) and the
+ * remaining upcoming items, based on the given time-of-day in minutes
+ * since midnight. Completed items are excluded entirely.
+ */
+export function splitAgendaByNow(
+  items: AgendaItem[],
+  nowMinutes: number
+): AgendaSplit {
+  let current: AgendaItem | null = null;
+  const upcoming: AgendaItem[] = [];
+
+  for (const item of items) {
+    const startM = timeStrToMinutes(item.start);
+    const endM = timeStrToMinutes(item.end);
+
+    if (nowMinutes >= startM && nowMinutes < endM) {
+      current = item;
+    } else if (startM > nowMinutes) {
+      upcoming.push(item);
+    }
+  }
+
+  return { current, upcoming };
+}
+
+/**
+ * Minutes remaining until the given end time ("HH:MM"), relative to
+ * nowMinutes (minutes since midnight). Never negative.
+ */
+export function minutesUntil(endTime: string, nowMinutes: number): number {
+  return Math.max(0, timeStrToMinutes(endTime) - nowMinutes);
 }

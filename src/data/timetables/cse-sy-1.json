@@ -2,7 +2,7 @@
   "division": "CSE-SY-1",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v3 (effective 20 Jul 26). High confidence.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v4 (effective 27 Jul 26). High confidence.",
   "rooms": {
     "NC-01": "NC-01, 1st Floor, Academic Complex",
     "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Building",
@@ -53,7 +53,7 @@
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Dnyaneshwari Dhadwad"
+            "faculty": "Anuja Patil"
           }
         }
       },
@@ -111,7 +111,7 @@
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Dnyaneshwari Dhadwad"
+            "faculty": "Anuja Patil"
           }
         }
       },
@@ -141,7 +141,7 @@
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Sneha G Chavan"
+            "faculty": "Sneha Chavan"
           }
         }
       },
@@ -177,7 +177,7 @@
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Dnyaneshwari Dhadwad"
+            "faculty": "Anuja Patil"
           }
         }
       },
@@ -240,7 +240,7 @@
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "ASL",
-            "faculty": "Dnyaneshwari Dhadwad"
+            "faculty": "Anuja Patil"
           }
         }
       },

@@ -46,6 +46,14 @@ const SUBJECT_META: Record<string, SyllabusMeta> = {
     credits: 2,
     pdf: "/syllabus/OEC-24015.pdf",
   },
+  "dsa.txt": {
+    code: "PCC-DSA",
+    branch: ["CSE", "AIML"],
+    standing: "SY",
+    semester: 3,
+    credits: 3,
+    pdf: "/syllabus/PCC-DSA.pdf",
+  },
 };
 
 mkdirSync(OUTPUT_DIR, { recursive: true });

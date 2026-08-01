@@ -2,7 +2,7 @@
   "division": "CSE-SY-3",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v3 (effective 20 Jul 26). High confidence, including DSY batch slots.",
+  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v4 (effective 27 Jul 26). High confidence, including DSY batch slots.",
   "rooms": {
     "NC-01": "NC-01, 1st Floor, Academic Complex",
     "NC-02": "NC-02, 1st Floor, Academic Complex",
@@ -13,7 +13,7 @@
     "DBMSL": "DBMS Lab, 1st Floor, CSE Dept"
   },
   "faculty": {
-    "MP": "Satish Kumbhar",
+    "MP": "Akshata Suryavanshi",
     "DSA": "Sujata Sonawane",
     "PPL": "Afsha Akkalkot",
     "ENTSP": "Teacher",
@@ -53,7 +53,7 @@
             "subject": "MP",
             "label": "MP Lab",
             "room": "ISL",
-            "faculty": "Shreya Dayama"
+            "faculty": "Akshata Suryavanshi"
           },
           "SY3-S2": {
             "subject": "DSA",
@@ -124,7 +124,7 @@
             "subject": "MP",
             "label": "MP Lab",
             "room": "ISL",
-            "faculty": "Shreya Dayama"
+            "faculty": "Akshata Suryavanshi"
           },
           "SY3-S3": {
             "subject": "DSA",
@@ -310,7 +310,7 @@
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "PL",
-            "faculty": "Pratiksha Deshmukh"
+            "faculty": "Prachiti Deshpande"
           }
         }
       },

@@ -14,6 +14,9 @@ const inter = Inter({
 
 
 
+
+
+
 export const metadata: Metadata = {
   title: "COEP Timetable",
   description: "Your class schedule, always at hand.",
