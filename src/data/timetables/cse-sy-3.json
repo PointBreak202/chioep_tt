@@ -323,14 +323,14 @@
         "start": "13:30",
         "end": "14:30",
         "type": "common",
-        "subject": "PPL",
+        "subject": "DSA",
         "room": "NC-02"
       },
       {
         "start": "14:30",
         "end": "15:30",
         "type": "common",
-        "subject": "DSA",
+        "subject": "PPL",
         "room": "NC-02"
       },
       {
