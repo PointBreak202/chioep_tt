@@ -2,12 +2,11 @@
   "division": "CSE-SY-3",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v4 (effective 27 Jul 26). High confidence, including DSY batch slots.",
+  "confidence": "Re-extracted via pdfplumber table-cell extraction from the department's Timetable-v6 (effective 17 Aug 26). High confidence.",
   "rooms": {
     "NC-01": "NC-01, 1st Floor, Academic Complex",
     "NC-02": "NC-02, 1st Floor, Academic Complex",
     "NC-03": "NC-03, 1st Floor, Academic Complex",
-    "NC-14": "NC-14, 4th Floor, Academic Complex",
     "ISL": "Information Security Lab, 3rd Floor, ENTC Extension Building",
     "PL": "Programming Lab, Ground Floor, CSE Dept",
     "DBMSL": "DBMS Lab, 1st Floor, CSE Dept"
@@ -16,9 +15,8 @@
     "MP": "Akshata Suryavanshi",
     "DSA": "Sujata Sonawane",
     "PPL": "Afsha Akkalkot",
-    "ENTSP": "Teacher",
-    "LL": "Teacher3",
-    "MDCP": "Maths Teacher1"
+    "ENTSP": "Sangeeta Batra",
+    "LL": "Teacher3"
   },
   "subjectNames": {
     "MP": "Microprocessors",
@@ -26,24 +24,11 @@
     "PPL": "Principles of Programming Languages",
     "ENTSP": "Entrepreneurship",
     "LL": "Language",
-    "MDCP": "Matrices, Differential Calculus and Probability",
     "OE": "Open Elective",
     "HM": "Honours/Minor"
   },
   "schedule": {
     "Mon": [
-      {
-        "start": "09:30",
-        "end": "10:30",
-        "type": "batchwise",
-        "batches": {
-          "SY3-S6(DSY)": {
-            "subject": "MDCP",
-            "label": "MDCP",
-            "room": "NC-14"
-          }
-        }
-      },
       {
         "start": "10:30",
         "end": "12:30",
@@ -52,8 +37,7 @@
           "SY3-S1": {
             "subject": "MP",
             "label": "MP Lab",
-            "room": "ISL",
-            "faculty": "Akshata Suryavanshi"
+            "room": "ISL"
           },
           "SY3-S2": {
             "subject": "DSA",
@@ -104,18 +88,6 @@
     ],
     "Tue": [
       {
-        "start": "09:30",
-        "end": "10:30",
-        "type": "batchwise",
-        "batches": {
-          "SY3-S6(DSY)": {
-            "subject": "MDCP",
-            "label": "MDCP",
-            "room": "NC-14"
-          }
-        }
-      },
-      {
         "start": "10:30",
         "end": "12:30",
         "type": "batchwise",
@@ -123,8 +95,7 @@
           "SY3-S2": {
             "subject": "MP",
             "label": "MP Lab",
-            "room": "ISL",
-            "faculty": "Akshata Suryavanshi"
+            "room": "ISL"
           },
           "SY3-S3": {
             "subject": "DSA",
@@ -143,30 +114,6 @@
         "start": "12:30",
         "end": "13:30",
         "type": "lunch"
-      },
-      {
-        "start": "15:30",
-        "end": "17:30",
-        "type": "batchwise",
-        "batches": {
-          "SY3-S6(DSY)": {
-            "subject": "MP",
-            "label": "MP Lab",
-            "room": "ISL",
-            "faculty": "Snehal Banarase"
-          },
-          "SY3-S1": {
-            "subject": "DSA",
-            "label": "DSA Lab",
-            "room": "PL",
-            "faculty": "Prachiti Deshpande"
-          },
-          "SY3-S2": {
-            "subject": "PPL",
-            "label": "PPL Lab",
-            "room": "DBMSL"
-          }
-        }
       }
     ],
     "Wed": [
@@ -178,18 +125,6 @@
         "room": "NC-01"
       },
       {
-        "start": "09:30",
-        "end": "10:30",
-        "type": "batchwise",
-        "batches": {
-          "SY3-S6(DSY)": {
-            "subject": "MDCP",
-            "label": "MDCP",
-            "room": "NC-14"
-          }
-        }
-      },
-      {
         "start": "10:30",
         "end": "12:30",
         "type": "batchwise",
@@ -197,8 +132,7 @@
           "SY3-S3": {
             "subject": "MP",
             "label": "MP Lab",
-            "room": "ISL",
-            "faculty": "Snehal Banarase"
+            "room": "ISL"
           },
           "SY3-S4": {
             "subject": "DSA",
@@ -234,8 +168,7 @@
           "SY3-S4": {
             "subject": "MP",
             "label": "MP Lab",
-            "room": "ISL",
-            "faculty": "Snehal Banarase"
+            "room": "ISL"
           },
           "SY3-S5": {
             "subject": "DSA",
@@ -243,7 +176,7 @@
             "room": "PL",
             "faculty": "Prachiti Deshpande"
           },
-          "SY3-S6(DSY)": {
+          "SY3-S1": {
             "subject": "PPL",
             "label": "PPL Lab",
             "room": "DBMSL"
@@ -298,19 +231,18 @@
           "SY3-S5": {
             "subject": "MP",
             "label": "MP Lab",
-            "room": "ISL",
-            "faculty": "Snehal Banarase"
+            "room": "ISL"
           },
           "SY3-S1": {
-            "subject": "PPL",
-            "label": "PPL Lab",
-            "room": "DBMSL"
-          },
-          "SY3-S6(DSY)": {
             "subject": "DSA",
             "label": "DSA Lab",
             "room": "PL",
             "faculty": "Prachiti Deshpande"
+          },
+          "SY3-S2": {
+            "subject": "PPL",
+            "label": "PPL Lab",
+            "room": "DBMSL"
           }
         }
       },

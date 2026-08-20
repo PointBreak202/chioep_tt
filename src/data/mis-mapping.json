@@ -63,5 +63,5 @@
       "AIML-SY1-S6(DSY)"
     ]
   },
-  "dsyNote": "Division 3 and 4 each also have a 15-student DSY batch (B6) with MIS numbers outside the regular roll ranges above. Exact DSY roll numbers not yet known - these students will currently see a roll_out_of_range error until we get that data."
+  "dsyNote": "Per Timetable-v6 (effective 17 Aug 26): CSE Div4 has two DSY batches, SY4-S5(DSY) and SY4-S6(DSY), woven directly into its schedule (own MDCP/lab slots). CSE Div3's v6 timetable shows no DSY batch at all. AIML Div1 has one DSY batch, AIML-SY1-S6(DSY) (already in manualBatchOptions below). None of these DSY batches have known MIS/roll numbers yet, so CSE Div4 DSY students still hit roll_out_of_range - there's no manual-picker fallback for CSE divisions yet (only AIML-1 has one)."
 }

@@ -2,11 +2,12 @@
   "division": "CSE-SY-2",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v4 (effective 27 Jul 26). High confidence.",
+  "confidence": "Re-extracted via pdfplumber table-cell extraction from the department's Timetable-v6 (effective 17 Aug 26). High confidence.",
   "rooms": {
     "NC-01": "NC-01, 1st Floor, Academic Complex",
     "NC-02": "NC-02, 1st Floor, Academic Complex",
-    "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Building",
+    "NC-27": "NC05, 2nd Floor, Academic Complex",
+    "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Bldg.",
     "FOSS2": "FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building",
     "ASL": "Advanced Software Lab, 1st Floor, CSE Dept"
   },
@@ -14,7 +15,7 @@
     "MP": "Archana Deokate",
     "DSA": "Tina Francis",
     "PPL": "Deepika Upadhey",
-    "ENTSP": "Teacher",
+    "ENTSP": "Sangeeta Batra",
     "LL": "Teacher2"
   },
   "subjectNames": {
@@ -60,8 +61,7 @@
           "SY2-S2": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "FOSS2",
-            "faculty": "Savita Adhav"
+            "room": "FOSS2"
           },
           "SY2-S3": {
             "subject": "PPL",
@@ -88,11 +88,11 @@
     ],
     "Tue": [
       {
-        "start": "08:30",
-        "end": "09:30",
+        "start": "09:30",
+        "end": "10:30",
         "type": "common",
         "subject": "ENTSP",
-        "room": "NC-01"
+        "room": "NC-27"
       },
       {
         "start": "10:30",
@@ -126,8 +126,7 @@
           "SY2-S3": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "FOSS2",
-            "faculty": "Savita Adhav"
+            "room": "FOSS2"
           },
           "SY2-S4": {
             "subject": "PPL",
@@ -171,8 +170,7 @@
           "SY2-S4": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "FOSS2",
-            "faculty": "Savita Adhav"
+            "room": "FOSS2"
           },
           "SY2-S5": {
             "subject": "PPL",
@@ -222,8 +220,7 @@
           "SY2-S5": {
             "subject": "DSA",
             "label": "DSA Lab",
-            "room": "FOSS2",
-            "faculty": "Savita Adhav"
+            "room": "FOSS2"
           },
           "SY2-S1": {
             "subject": "PPL",

@@ -2,10 +2,11 @@
   "division": "CSE-SY-1",
   "branch": "CSE",
   "standing": "SY",
-  "confidence": "Verified against exact table cell structure (pdfplumber extraction) from the department's Timetable-v4 (effective 27 Jul 26). High confidence.",
+  "confidence": "Re-extracted via pdfplumber table-cell extraction from the department's Timetable-v6 (effective 17 Aug 26). High confidence.",
   "rooms": {
     "NC-01": "NC-01, 1st Floor, Academic Complex",
-    "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Building",
+    "NC-08": "NC-08, 2nd Floor, Academic Complex",
+    "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Bldg.",
     "FOSS2": "FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building",
     "ASL": "Advanced Software Lab, 1st Floor, CSE Dept"
   },
@@ -13,7 +14,7 @@
     "MP": "Satish Kumbhar",
     "DSA": "Sujata Sonawane",
     "PPL": "Afsha Akkalkot",
-    "ENTSP": "Teacher",
+    "ENTSP": "Sangeeta Batra",
     "LL": "Teacher1"
   },
   "subjectNames": {
@@ -28,11 +29,11 @@
   "schedule": {
     "Mon": [
       {
-        "start": "08:30",
-        "end": "09:30",
+        "start": "09:30",
+        "end": "10:30",
         "type": "common",
         "subject": "ENTSP",
-        "room": "NC-01"
+        "room": "NC-08"
       },
       {
         "start": "10:30",
@@ -184,14 +185,14 @@
       {
         "start": "12:30",
         "end": "13:30",
-        "type": "common",
-        "subject": "PPL",
-        "room": "NC-01"
+        "type": "lunch"
       },
       {
         "start": "13:30",
         "end": "14:30",
-        "type": "lunch"
+        "type": "common",
+        "subject": "PPL",
+        "room": "NC-01"
       },
       {
         "start": "14:30",
@@ -247,14 +248,14 @@
       {
         "start": "12:30",
         "end": "13:30",
-        "type": "common",
-        "subject": "PPL",
-        "room": "NC-01"
+        "type": "lunch"
       },
       {
         "start": "13:30",
         "end": "14:30",
-        "type": "lunch"
+        "type": "common",
+        "subject": "PPL",
+        "room": "NC-01"
       },
       {
         "start": "14:30",
