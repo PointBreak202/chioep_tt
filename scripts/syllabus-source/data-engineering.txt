@@ -1,0 +1,67 @@
+(PCC) Data Engineering
+
+Teaching Scheme
+Lectures: 3 Hrs/Week
+Laboratory: 2 Hrs/Week
+
+Evaluation Scheme
+Theory: MSE: 30 Marks, TA: 20 Marks, ESE: 50 Marks
+Laboratory: CIE: 100 Marks
+
+Course outcomes
+1. Understand the fundamentals of data science and analytics.
+2. Learn data preprocessing and visualization techniques.
+3. Apply statistical and machine learning methods to solve problems.
+4. Develop practical skills using Python and data science libraries.
+5. Interpret data-driven results for engineering applications.
+
+Course content
+Introduction to Data Engineering: [6 Hrs]
+Introduction and Importance of Data Engineering, Types of data, Sources of data, Life cycle of data science, Roles in data science - Data analyst, Data scientist, Data Engineer, Challenges, Applications, Big data concepts.
+
+Data Preprocessing: [6 Hrs]
+Introduction to data preprocessing, Statistical data type, Data cleaning techniques, Data transformation, Data integration, Data normalization and standardization, Data preprocessing with Pandas - series and data frame in pandas, Loading CSV and Excel files, Data Inspection and Exploration, Data Selection and Filtering, Handling Missing and Duplicate Data, Data Transformation, Data Aggregation and Integration.
+
+Data transformation and Integration: [6 Hrs]
+Data normalization and standardization, aggregation and filtering, formatting and type conversion of data, Feature extraction basics, Data enrichment concepts, Data mapping techniques, Data discretization and binning, Data reduction techniques, Concept and architecture of ETL, Data extraction from multiple sources, Data transformation techniques, ETL workflow and scheduling, ETL vs ELT, Error handling in ETL pipelines, data integration, Data flow and pipeline concepts.
+
+Data Visualization and Statistics: [6 Hrs]
+Descriptive and Inferential statistics, Data Visualization using matplotlib, Types of Charts and Graphs - Bar chart, Pie chart, Histogram, Scatter plot, Line graph, Jitter plot, Seaborn Libraries - Heatmap, Violin plot, Pair plot.
+
+Data Modelling: [6 Hrs]
+Introduction to machine learning, Types of machine learning, Regression algorithm, Classification algorithm, Clustering algorithm, Model Evaluation Matrices, Building hypothesis model, p-values, Type I/II errors, t-tests & ANOVA - One-sample, two-sample, one-way and two-way ANOVA, Chi-squared tests Goodness of fit, independence tests for categorical data.
+
+Data science tools and techniques: [6 Hrs]
+Over-fitting, under-fitting and model evaluation metrics: Bias-variance tradeoff, MSE, RMSE, Regularization Techniques (L1 & L2), Introduction to Scikit-learn, Model Training and Testing, Introduction to TensorFlow and Keras, data warehousing concepts, Cloud platform for data science.
+
+Self-study: [12 Hrs]
+Data Science Applications in Engineering - Healthcare, Agriculture, Smart cities, Data privacy and security, Bias and fairness in AI, case studies in Data science.
+
+Textbooks
+1. "Mining of Massive Datasets", Jure Leskovec, Anand Rajaraman, and Jeffery David Ullman, Cambridge University Press, 2nd edition (13 November 2014), ISBN-10: 1107077230, ISBN-13: 978-1107077232.
+2. "Foundation of Data Science", Avrim Blum, John Hopcraft, and Ravindran Kannan, Hindustan Book Agency (online free version), January 2020, ISBN-10: 9386279800.
+
+Reference Books
+1. "Foundations of Data Science", Avrim Blum, John Hopcroft, and Ravindran Kannan, Hindustan Book Agency (online free version), January 2020, ISBN-10: 9386279800.
+2. "Introduction to Machine Learning", Ethem Alpaydin, PHI Learning Pvt Ltd, Third edition, 2016, ISBN-978-81-203-5078-6.
+
+Web references
+1. https://www.kaggle.com/code/imoore/intro-to-exploratory-data-analysis-eda-in-python
+2. https://www.tensorflow.org/resources/learn-ml
+3. https://matplotlib.org/stable/index.html?utm_source
+4. https://developers.google.com/machine-learning/crash-course?utm_source
+
+Laboratory assignments
+1. Real-world datasets often contain missing values, duplicate records, inconsistent formats, and noisy data that affect the performance of data analysis and machine learning models. Develop a data preprocessing system using Python to clean, transform, and prepare a dataset for further analysis.
+2. Organizations collect large amounts of structured data that must be analyzed efficiently for decision making. Develop a Python program using the Pandas library to import, manipulate, analyze, and visualize tabular datasets.
+3. Develop a Python-based data analysis system using the Pandas library to perform data cleaning, filtering, grouping, aggregation, and reporting.
+4. Develop a Python program using the Matplotlib library to create various graphical representations of datasets for effective data analysis and interpretation.
+5. Understanding relationships between variables and analyzing data distribution are important tasks in data science. Develop a Python program using Seaborn to generate Heatmaps and Violin Plots for analyzing correlations and distributions in datasets.
+6. Organizations use predictive models to analyze historical data and forecast future outcomes. Develop a machine learning-based data modelling system using Python to train, test, and evaluate predictive models on a real-world dataset.
+7. Develop machine learning models and analyze the effects of overfitting and underfitting using training and testing datasets.
+8. Machine learning models may overfit due to complex features. Implement L1 and L2 regularization techniques to reduce overfitting and improve model performance.
+9. Develop a simple neural network model using TensorFlow and Keras for classification tasks.
+10. Develop a Python program to calculate conditional probabilities and apply Bayes' theorem for probabilistic decision making.
+11. Download a CSV dataset from any open-source platform and perform various data transformation and integration tasks to prepare the dataset for analytics and reporting.
+
+This list serves as a guideline and is intended to be continuously refined by the instructor.

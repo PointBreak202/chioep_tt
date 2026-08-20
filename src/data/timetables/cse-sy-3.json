@@ -118,8 +118,8 @@
     ],
     "Wed": [
       {
-        "start": "09:30",
-        "end": "10:30",
+        "start": "08:30",
+        "end": "09:30",
         "type": "common",
         "subject": "ENTSP",
         "room": "NC-01"

@@ -1,0 +1,189 @@
+{
+  "code": "PCC-DE",
+  "name": "Data Engineering",
+  "category": "PCC",
+  "branch": [
+    "AIML"
+  ],
+  "standing": "SY",
+  "semester": 3,
+  "credits": 3,
+  "courseOutcomes": [
+    {
+      "id": "CO1",
+      "text": "Understand the fundamentals of data science and analytics."
+    },
+    {
+      "id": "CO2",
+      "text": "Learn data preprocessing and visualization techniques."
+    },
+    {
+      "id": "CO3",
+      "text": "Apply statistical and machine learning methods to solve problems."
+    },
+    {
+      "id": "CO4",
+      "text": "Develop practical skills using Python and data science libraries."
+    },
+    {
+      "id": "CO5",
+      "text": "Interpret data-driven results for engineering applications."
+    }
+  ],
+  "units": [
+    {
+      "title": "Introduction to Data Engineering",
+      "hours": 6,
+      "topics": "Introduction and Importance of Data Engineering, Types of data, Sources of data, Life cycle of data science, Roles in data science - Data analyst, Data scientist, Data Engineer, Challenges, Applications, Big data concepts."
+    },
+    {
+      "title": "Data Preprocessing",
+      "hours": 6,
+      "topics": "Introduction to data preprocessing, Statistical data type, Data cleaning techniques, Data transformation, Data integration, Data normalization and standardization, Data preprocessing with Pandas - series and data frame in pandas, Loading CSV and Excel files, Data Inspection and Exploration, Data Selection and Filtering, Handling Missing and Duplicate Data, Data Transformation, Data Aggregation and Integration."
+    },
+    {
+      "title": "Data transformation and Integration",
+      "hours": 6,
+      "topics": "Data normalization and standardization, aggregation and filtering, formatting and type conversion of data, Feature extraction basics, Data enrichment concepts, Data mapping techniques, Data discretization and binning, Data reduction techniques, Concept and architecture of ETL, Data extraction from multiple sources, Data transformation techniques, ETL workflow and scheduling, ETL vs ELT, Error handling in ETL pipelines, data integration, Data flow and pipeline concepts."
+    },
+    {
+      "title": "Data Visualization and Statistics",
+      "hours": 6,
+      "topics": "Descriptive and Inferential statistics, Data Visualization using matplotlib, Types of Charts and Graphs - Bar chart, Pie chart, Histogram, Scatter plot, Line graph, Jitter plot, Seaborn Libraries - Heatmap, Violin plot, Pair plot."
+    },
+    {
+      "title": "Data Modelling",
+      "hours": 6,
+      "topics": "Introduction to machine learning, Types of machine learning, Regression algorithm, Classification algorithm, Clustering algorithm, Model Evaluation Matrices, Building hypothesis model, p-values, Type I/II errors, t-tests & ANOVA - One-sample, two-sample, one-way and two-way ANOVA, Chi-squared tests Goodness of fit, independence tests for categorical data."
+    },
+    {
+      "title": "Data science tools and techniques",
+      "hours": 6,
+      "topics": "Over-fitting, under-fitting and model evaluation metrics: Bias-variance tradeoff, MSE, RMSE, Regularization Techniques (L1 & L2), Introduction to Scikit-learn, Model Training and Testing, Introduction to TensorFlow and Keras, data warehousing concepts, Cloud platform for data science."
+    }
+  ],
+  "textbooks": [
+    {
+      "name": "Mining of Massive Datasets"
+    },
+    {
+      "name": "Foundation of Data Science"
+    }
+  ],
+  "referenceBooks": [
+    {
+      "name": "Foundations of Data Science"
+    },
+    {
+      "name": "Introduction to Machine Learning"
+    }
+  ],
+  "pdf": "/syllabus/PCC-DE.pdf",
+  "teachingScheme": {
+    "lecturesPerWeek": "3 Hrs/Week",
+    "labPerWeek": "2 Hrs/Week"
+  },
+  "evaluationScheme": [
+    {
+      "label": "Theory - MSE",
+      "marks": 30
+    },
+    {
+      "label": "Theory - TA",
+      "marks": 20
+    },
+    {
+      "label": "Theory - ESE",
+      "marks": 50
+    },
+    {
+      "label": "Laboratory - CIE",
+      "marks": 100
+    }
+  ],
+  "selfStudy": {
+    "title": "Self-study",
+    "hours": 12,
+    "topics": "Data Science Applications in Engineering - Healthcare, Agriculture, Smart cities, Data privacy and security, Bias and fairness in AI, case studies in Data science."
+  },
+  "webReferences": [
+    {
+      "text": "https://www.kaggle.com/code/imoore/intro-to-exploratory-data-analysis-eda-in-python",
+      "url": "https://www.kaggle.com/code/imoore/intro-to-exploratory-data-analysis-eda-in-python"
+    },
+    {
+      "text": "https://www.tensorflow.org/resources/learn-ml",
+      "url": "https://www.tensorflow.org/resources/learn-ml"
+    },
+    {
+      "text": "https://matplotlib.org/stable/index.html?utm_source",
+      "url": "https://matplotlib.org/stable/index.html?utm_source"
+    },
+    {
+      "text": "https://developers.google.com/machine-learning/crash-course?utm_source",
+      "url": "https://developers.google.com/machine-learning/crash-course?utm_source"
+    }
+  ],
+  "practicals": [
+    {
+      "id": "LA1",
+      "title": "Real-world datasets often contain missing values, duplicate records, inconsistent formats, and noisy data that affect the performance of data analysis and machine learning models. Develop a data preprocessing system using Python to clean, transform, and prepare a dataset for further analysis.",
+      "items": []
+    },
+    {
+      "id": "LA2",
+      "title": "Organizations collect large amounts of structured data that must be analyzed efficiently for decision making. Develop a Python program using the Pandas library to import, manipulate, analyze, and visualize tabular datasets.",
+      "items": []
+    },
+    {
+      "id": "LA3",
+      "title": "Develop a Python-based data analysis system using the Pandas library to perform data cleaning, filtering, grouping, aggregation, and reporting.",
+      "items": []
+    },
+    {
+      "id": "LA4",
+      "title": "Develop a Python program using the Matplotlib library to create various graphical representations of datasets for effective data analysis and interpretation.",
+      "items": []
+    },
+    {
+      "id": "LA5",
+      "title": "Understanding relationships between variables and analyzing data distribution are important tasks in data science. Develop a Python program using Seaborn to generate Heatmaps and Violin Plots for analyzing correlations and distributions in datasets.",
+      "items": []
+    },
+    {
+      "id": "LA6",
+      "title": "Organizations use predictive models to analyze historical data and forecast future outcomes. Develop a machine learning-based data modelling system using Python to train, test, and evaluate predictive models on a real-world dataset.",
+      "items": []
+    },
+    {
+      "id": "LA7",
+      "title": "Develop machine learning models and analyze the effects of overfitting and underfitting using training and testing datasets.",
+      "items": []
+    },
+    {
+      "id": "LA8",
+      "title": "Machine learning models may overfit due to complex features. Implement L1 and L2 regularization techniques to reduce overfitting and improve model performance.",
+      "items": []
+    },
+    {
+      "id": "LA9",
+      "title": "Develop a simple neural network model using TensorFlow and Keras for classification tasks.",
+      "items": []
+    },
+    {
+      "id": "LA10",
+      "title": "Develop a Python program to calculate conditional probabilities and apply Bayes' theorem for probabilistic decision making.",
+      "items": []
+    },
+    {
+      "id": "LA11",
+      "title": "Download a CSV dataset from any open-source platform and perform various data transformation and integration tasks to prepare the dataset for analytics and reporting.",
+      "items": []
+    },
+    {
+      "id": "LA12",
+      "title": "This list serves as a guideline and is intended to be continuously refined by the instructor.",
+      "items": []
+    }
+  ]
+}

@@ -4,6 +4,9 @@ import pccPpl from "@/data/syllabus/PCC-PPL.json";
 import pcc02Mp from "@/data/syllabus/PCC02-MP.json";
 import pccDsa from "@/data/syllabus/PCC-DSA.json";
 import oec24015 from "@/data/syllabus/OEC-24015.json";
+import pccDe from "@/data/syllabus/PCC-DE.json";
+import pccPlp from "@/data/syllabus/PCC-PLP.json";
+import pccDsct from "@/data/syllabus/PCC-DSCT.json";
 import studentOec from "@/data/student-oec.json";
 
 // Registry of every subject JSON currently available, keyed by subject code.
@@ -15,6 +18,9 @@ const SUBJECTS: Record<string, Subject> = {
   "PCC02-MP": pcc02Mp as Subject,
   "PCC-DSA": pccDsa as Subject,
   "OEC-24015": oec24015 as Subject,
+  "PCC-DE": pccDe as Subject,
+  "PCC-PLP": pccPlp as Subject,
+  "PCC-DSCT": pccDsct as Subject,
 };
 
 // Maps a student's (branch, standing) to the *compulsory* subject codes they
@@ -34,8 +40,15 @@ const CURRICULUM: Record<string, Record<string, string[]>> = {
   CSE: {
     SY: ["PCC-PPL", "PCC02-MP", "PCC-DSA"],
   },
+  // AIML's SY curriculum does NOT include Principles of Programming
+  // Languages, Microprocessors, or Data Structures and Algorithms -- those
+  // are CSE-only courses. AIML's own SY Sem-3 PCCs are Data Engineering,
+  // Programming Language Paradigms, and Data Structures and Complexity
+  // Theory (confirmed against the official AIML curriculum structure PDF).
+  // This was previously pointed at the CSE codes by mistake; fixed here
+  // alongside adding the AIML-specific subject data.
   AIML: {
-    SY: ["PCC-PPL", "PCC02-MP", "PCC-DSA"],
+    SY: ["PCC-DE", "PCC-PLP", "PCC-DSCT"],
   },
 };
 

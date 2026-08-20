@@ -23,16 +23,25 @@ const OUTPUT_DIR = join(__dirname, "..", "src", "data", "syllabus");
 // catalog decisions that don't live inside the syllabus document.
 const SUBJECT_META: Record<string, SyllabusMeta> = {
   "ppl.txt": {
+    // "Principles of Programming Languages" -- CSE-only. Not the same course
+    // as AIML's "Programming Language Paradigms" (PCC-PLP below) despite the
+    // similar name and shared PPL-ish sound: different teaching scheme (2 Hrs
+    // lecture/week here vs 3 for AIML's PLP) and different content. Previously
+    // this was incorrectly also tagged ["CSE","AIML"] and shown to AIML
+    // students via CURRICULUM in data.ts -- fixed alongside adding PCC-PLP.
     code: "PCC-PPL",
-    branch: ["CSE", "AIML"],
+    branch: ["CSE"],
     standing: "SY",
     semester: 3,
     credits: 3,
     pdf: "/syllabus/PCC-PPL.pdf",
   },
   "microprocessors.txt": {
+    // CSE-only -- AIML's SY curriculum has no Microprocessors course at all
+    // (confirmed against the official AIML curriculum structure PDF).
+    // Previously incorrectly tagged ["CSE","AIML"].
     code: "PCC02-MP",
-    branch: ["CSE", "AIML"],
+    branch: ["CSE"],
     standing: "SY",
     semester: 3,
     credits: 3,
@@ -47,12 +56,40 @@ const SUBJECT_META: Record<string, SyllabusMeta> = {
     pdf: "/syllabus/OEC-24015.pdf",
   },
   "dsa.txt": {
+    // "Data Structures and Algorithms" -- CSE-only. AIML's equivalent course
+    // is "Data Structures and Complexity Theory" (PCC-DSCT below), a
+    // differently-scoped course (adds complexity-theory framing), not just a
+    // rename. Previously incorrectly tagged ["CSE","AIML"].
     code: "PCC-DSA",
-    branch: ["CSE", "AIML"],
+    branch: ["CSE"],
     standing: "SY",
     semester: 3,
     credits: 3,
     pdf: "/syllabus/PCC-DSA.pdf",
+  },
+  "data-engineering.txt": {
+    code: "PCC-DE",
+    branch: ["AIML"],
+    standing: "SY",
+    semester: 3,
+    credits: 3,
+    pdf: "/syllabus/PCC-DE.pdf",
+  },
+  "plp.txt": {
+    code: "PCC-PLP",
+    branch: ["AIML"],
+    standing: "SY",
+    semester: 3,
+    credits: 4,
+    pdf: "/syllabus/PCC-PLP.pdf",
+  },
+  "dsct.txt": {
+    code: "PCC-DSCT",
+    branch: ["AIML"],
+    standing: "SY",
+    semester: 3,
+    credits: 4,
+    pdf: "/syllabus/PCC-DSCT.pdf",
   },
 };
 

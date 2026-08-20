@@ -1,13 +1,13 @@
 {
-  "code": "PCC-DSA",
-  "name": "Data Structures and Algorithms",
+  "code": "PCC-DSCT",
+  "name": "Data Structures and Complexity Theory",
   "category": "PCC",
   "branch": [
-    "CSE"
+    "AIML"
   ],
   "standing": "SY",
   "semester": 3,
-  "credits": 3,
+  "credits": 4,
   "courseOutcomes": [
     {
       "id": "CO1",
@@ -39,26 +39,26 @@
     {
       "title": "Linear Data Structures and their storage representation",
       "hours": 6,
-      "topics": "Features of Linear Data Structures, Array as ADT, List as ADT, Concept of linked linear list, Operations on linked linear list, Singly linked list, doubly linked list, circular linked list. Application of linked linear list - Polynomial manipulations, linked dictionary."
+      "topics": "Stack and queue as ADT, Operations on stack and queue. Implementations using arrays and linked lists. Application of stack for expression conversion and evaluation, Recursion. Problems like maze and knight's tours."
     },
     {
       "title": "Linear Data Structures: Stacks and Queues",
       "hours": 8,
-      "topics": "Stack and queue as ADT, Operations on stack and queue. Implementations using arrays and linked lists. Application of stack for expression conversion and evaluation, Recursion. Problems like maze and knight's tours."
+      "topics": "Concept of Non-Linear Data Structures, Tree: Basic terminology, representation of trees, Binary Tree: ADT Binary trees, Properties of a Binary Tree and its representations, Binary tree traversals - Inorder, preorder, postorder (recursive and non-recursive) and various operations. Binary Search Tree (BST): Definition, searching a BST, Operations of Insertion and deletion on BST. Heaps: Priority queues, Max and Min Heap, Operations on heap."
     },
     {
       "title": "Non-Linear Data Structures: Trees",
-      "hours": 6,
+      "hours": 8,
       "topics": "Concept of Non-Linear Data Structures, Tree: Basic terminology, representation of trees, Binary Tree: ADT Binary trees, Properties of a Binary Tree and its representations, Binary tree traversals - Inorder, preorder, postorder (recursive and non-recursive) and various operations. Binary Search Tree (BST): Definition, searching a BST, Operations of Insertion and deletion on BST. Heaps: Priority queues, Max and Min Heap, Operations on heap."
     },
     {
       "title": "Non-Linear Data Structures: Graphs",
-      "hours": 8,
+      "hours": 6,
       "topics": "Graph ADT, Representation of graphs using adjacency matrix, adjacency list, Elementary graph operations - Breadth First Search (BFS), Depth First Search (DFS), Analysis of BFS and DFS. Spanning Trees - Introduction, obtaining minimum cost spanning tree using greedy design strategy of Prim's and Kruskal's algorithms, Single source shortest paths using Dijkstra's algorithm."
     },
     {
       "title": "Searching and Sorting",
-      "hours": 8,
+      "hours": 6,
       "topics": "Linear and binary search algorithms and their analysis. Bubble Sort, Selection sort, Insertion Sort, Quick Sort, Heapsort with time complexity analysis. Hashing: hashing functions, chaining, overflow handling with and without chaining, open addressing: linear and quadratic probing."
     }
   ],
@@ -86,7 +86,7 @@
       "author": "Jean-Paul Tremblay, Paul. G. Sorensan"
     }
   ],
-  "pdf": "/syllabus/PCC-DSA.pdf",
+  "pdf": "/syllabus/PCC-DSCT.pdf",
   "teachingScheme": {
     "lecturesPerWeek": "3 Hrs/Week",
     "labPerWeek": "2 Hrs/Week",
@@ -117,16 +117,8 @@
   },
   "webReferences": [
     {
-      "text": "https://nptel.ac.in/courses/106102064",
-      "url": "https://nptel.ac.in/courses/106102064"
-    },
-    {
-      "text": "https://nptel.ac.in/courses/106106127",
-      "url": "https://nptel.ac.in/courses/106106127"
-    },
-    {
-      "text": "https://nptel.ac.in/courses/106105171",
-      "url": "https://nptel.ac.in/courses/106105171"
+      "text": "https://onlinecourses.nptel.ac.in/e-learning/preview/noc25_cs81",
+      "url": "https://onlinecourses.nptel.ac.in/e-learning/preview/noc25_cs81"
     }
   ],
   "practicals": [
@@ -182,52 +174,7 @@
     },
     {
       "id": "LA11",
-      "title": "Implement a sparse matrix with operations like initialize an empty sparse matrix, insert an element, sort a sparse matrix on a row-column, add two matrices and return the result as a matrix, transpose a matrix, etc.",
-      "items": []
-    },
-    {
-      "id": "LA12",
-      "title": "Develop C functions to insert and delete into/from a max heap under the assumption that a dynamically allocated array is used, the initial capacity of this array is 1, and array doubling is done whenever we are to insert into a max heap that is full.",
-      "items": []
-    },
-    {
-      "id": "LA13",
-      "title": "Implement Heap sort algorithm on a set of records, with a specified key.",
-      "items": []
-    },
-    {
-      "id": "LA14",
-      "title": "Write a graph implementation, using adjacency lists and demonstrate Dijkstra's algorithm on it.",
-      "items": []
-    },
-    {
-      "id": "LA15",
-      "title": "Write a program to read a map stored in a text file with (city1, city2, distance) comma separated values. Build a graph using this data. Print all pairs shortest paths information between all pairs of cities.",
-      "items": []
-    },
-    {
-      "id": "LA16",
-      "title": "Implement DFS and BFS on a Graph.",
-      "items": []
-    },
-    {
-      "id": "LA17",
-      "title": "Write a program to find all connected components of a Graph, on a map specified in a text file as Source, Destination, distance comma separated values.",
-      "items": []
-    },
-    {
-      "id": "LA18",
-      "title": "Develop a hash table implementation in which overflows are resolved using chaining. Read a set of records from a file, insert them into a hash table, then perform a set of searches using supplied data and show the search results.",
-      "items": []
-    },
-    {
-      "id": "LA19",
-      "title": "Implement a dictionary using a sparse matrix data structure.",
-      "items": []
-    },
-    {
-      "id": "LA20",
-      "title": "Mini-project: Write an application of your own demonstrating your skills in defining a problem, writing down the requirements carefully, designing a modular solution with clear separation of abstract data types and their use, design of proper function prototypes and division of work among functions. The application can be a unix command re-implemented (e.g. cut, find, tar, fdupes, bc, etc.), reimplementation of C library functions, memory allocator, a simple game using libraries like n-curses or SDL, games like sudoku or chess, or an application to manage institutions like hospitals, colleges, shops, etc.",
+      "title": "This list serves as a guideline and is intended to be continuously refined by the instructor.",
       "items": []
     }
   ]

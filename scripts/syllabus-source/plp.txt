@@ -1,0 +1,81 @@
+(PCC) Programming Language Paradigms
+
+Teaching Scheme
+Lectures: 3 Hrs/Week
+Laboratory: 2 Hrs/Week
+Self-Study: 1 Hr/Week
+
+Evaluation Scheme
+Theory: MSE: 30 Marks, TA: 20 Marks, ESE: 50 Marks
+Laboratory: CIE: 100 Marks
+
+Course outcomes
+1. Explain fundamental concepts of different programming paradigms.
+2. Design a class hierarchy using object-oriented thinking for a given problem.
+3. Compare, annotate, and comment on various object-oriented programming concepts.
+4. Create object-oriented application code for a given problem.
+5. Demonstrate ability to write simple programs using exception handling and event driven programming concepts.
+
+Course content
+Introduction to Principles of Programming Languages: [5 Hrs]
+Reasons for Studying Concepts of Programming Languages. Programming Domains. Language Evaluation Criteria. Influences on Language Design: computer architecture. Language Categories. Language Design Trade-Offs.
+
+Implementation Methods: [7 Hrs]
+Compilation, Interpretation, Hybrid Implementation, Preprocessors. Programming Environments. Evolution of the Major Programming Languages (Pseudocodes, C, C++, Python, Java).
+
+Language Description: Syntactic Structure: [8 Hrs]
+Expression Notations, Abstract Syntax Trees (AST), Lexical Syntax, Context-Free Grammars (CFG), top-down parsing, Bottom-up parsing. Names, Bindings, and Scopes, Type checking, Strong Typing. Type Conversions.
+
+Programming Paradigms: [6 Hrs]
+Various programming paradigms: Procedural, object-oriented, logic and functional, concurrent programming. Classes, Objects, Methods; Data types provided by OO languages; Abstract Data Types.
+
+Introduction to OOP: [8 Hrs]
+Characteristics of OOP: Encapsulation, Polymorphism, Abstraction, Constructors, Destructors, Access specifications: Private, public, protected members. Inheritance, Types of inheritance: single, multilevel, multiple, hierarchical and hybrid, Class hierarchies.
+
+Exception Handling & Multi-Threaded Programming: [6 Hrs]
+Exception handling, Exception types, Concurrent Programming, Basic Concepts of Concurrent Programming, Threads, Multi-threading.
+
+Self-study [12 Hrs]
+Unified Process - UML (Unified Modeling Language) diagram, use case, class diagrams, interaction diagrams, state diagrams, activity diagrams, package, component and deployment diagrams. Design: Unified Modelling language; use case diagrams; Class Diagrams.
+
+Textbooks
+1. Ravi Sethi, "Programming Languages Concepts and Constructs", 2nd edition, Pearson Education, ISBN-0201590654/9780201590654.
+2. Schesta R., "Concepts Of Programming Languages", 4th Edition, Pearson Education, ISBN-81-7808-161-X.
+3. Cay S Horstmann and Gary Cornell, "Core Java Vol-1 and Vol-2", 9th Edition, Pearson Education India, ISBN-10: 9332518904 and 9332518890.
+4. Ronald Leach, "Object-Oriented Design and Programming with C++: Your Hands-On Guide to C++", Academic Press, ISBN: 9781483214122.
+
+Reference Books
+1. Ghezzi C, Milano P., Jazayeri M., "Programming Languages Concepts", 3rd Edition, John Wiley and Sons Pvt. Ltd (WSE), ISBN-0195113063.
+2. Roosta S., "Foundations of Programming Languages", Thomson, Brooke/Cole, ISBN 981-243-141-1.
+3. Herbert Schilt, "JAVA Complete Reference", 7th Edition, Tata McGraw Hill, ISBN: 9780070636774.
+4. E. Balagurusamy, "Object Oriented Programming with C++", 6th Edition, McGraw Hill, ISBN10: 125902993X.
+5. E. Balagurusamy, "Programming with JAVA - A Primer", 3rd Edition, McGraw Hill, ISBN 0-07-0617139.
+
+Web references
+1. https://nptel.ac.in/courses/106102067
+2. https://onlinecourses.nptel.ac.in/e-learning/preview/noc25_cs34
+
+Laboratory assignments
+1. Design a banking management system to maintain customer account information. The system should support functionalities such as account creation, deposit, withdrawal, balance inquiry, transaction history maintenance, and validation for insufficient balance conditions. Represent the complete solution using suitable classes and relationships.
+2. Write a program to implement the following. Create a base class called STUDENT consisting of student name and roll number. Create two child classes:
+  a. ACADEMIC with member marks
+  b. SPORTS with member sports_grade.
+  Inherit both classes into a class RESULT containing student name, roll number, marks, and sports grade. Display the complete student result information using suitable methods.
+  a. Write a script to display:
+  b. Current system date and time
+  c. Current month and year
+  d. Number of days in the current month
+  e. Current week number of the year
+  f. Current weekday name
+  g. Day number of the year
+  h. Current date of the month and current day of the week.
+3. Design an employee payroll management system for an organization. The system should manage employee profiles, departments, attendance records, incentives, deductions, and monthly salary generation. Include role-based employee categories such as manager, technical staff, and administrative staff.
+4. Create a transportation reservation system for railway or airline booking. The system should support passenger registration, seat availability checking, reservation confirmation, ticket cancellation, fare calculation, and waiting list management with proper exception handling.
+5. Design a library automation system capable of handling book issue, return, renewal, fine calculation, and inventory management. The system should maintain separate records for students, faculty members, and librarians along with transaction logs.
+6. Construct a hospital management system to manage doctor details, patient records, appointments, medical history, laboratory reports, and billing information. The system should also support emergency patient handling and appointment scheduling conflicts.
+7. Develop a menu-driven matrix and statistical analysis system capable of performing operations such as matrix addition, subtraction, multiplication, transpose, determinant calculation, mean, median, mode, and standard deviation for datasets entered by the user.
+8. Construct a UML Class Diagram for an Online Food Delivery System. The system should include entities such as Customer, Restaurant, Delivery Partner, Order, Payment, and Feedback. Clearly represent associations, multiplicity, inheritance, and aggregation relationships.
+9. Construct a State Diagram for an Automated Vending Machine System. The diagram should represent states such as idle, product selection, payment processing, item dispensing, insufficient balance handling, cancellation, and transaction completion with appropriate transitions.
+10. Design a smart city parking management system capable of handling vehicle entry/exit, slot allocation, parking duration calculation, automated billing, digital payment, and parking availability monitoring. Represent the complete workflow using suitable UML diagrams and explain the relationships between system components.
+
+This list serves as a guideline and is intended to be continuously refined by the instructor.
