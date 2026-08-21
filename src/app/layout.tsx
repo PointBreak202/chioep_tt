@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
 import SplashScreen from "@/components/SplashScreen";
+import IOSInstallPrompt from "@/components/IOSInstallPrompt";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
       <body>
         <ServiceWorkerRegister />
         <SplashScreen />
+        <IOSInstallPrompt />
         {children}
       </body>
     </html>
