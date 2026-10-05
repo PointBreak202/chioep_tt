@@ -13,7 +13,9 @@ export interface ElectiveSession {
 // entries here once a section roster is available. No current student picks
 // Data Analytics as their OEC (checked against student-oec.json), so this
 // isn't blocking anyone today.
-export const OEC_SESSIONS: Record<string, ElectiveSession> = {};
+export const OEC_SESSIONS: Record<string, ElectiveSession> = {
+  "numerical methods": { room: "NC-01", faculty: "" },
+};
 
 export const HONORS_MINOR_SESSIONS: Record<string, ElectiveSession> = {
   "making sense of data": { room: "NC-04", faculty: "Shriganeshrajkumar Togare" },

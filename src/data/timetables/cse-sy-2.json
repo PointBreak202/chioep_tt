@@ -4,12 +4,13 @@
   "standing": "SY",
   "confidence": "Re-extracted via pdfplumber table-cell extraction from the department's Timetable-v6 (effective 17 Aug 26). High confidence.",
   "rooms": {
-    "NC-01": "NC-01, 1st Floor, Academic Complex",
-    "NC-02": "NC-02, 1st Floor, Academic Complex",
-    "NC-27": "NC05, 2nd Floor, Academic Complex",
+    "NC-26": "NC-26, 3rd Floor, New CSE Dept Building",
     "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Bldg.",
     "FOSS2": "FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building",
-    "ASL": "Advanced Software Lab, 1st Floor, CSE Dept"
+    "NC-25": "NC-25, 3rd Floor, New CSE Dept Building",
+    "ASL": "Advanced Software Lab, 1st Floor, CSE Dept",
+    "NC-28": "NC-28, 4th Floor, New CSE Dept Building",
+    "FOSS1": "FOSS Lab, Column 1, 3rd Floor, ENTC Extension Building"
   },
   "faculty": {
     "MP": "Archana Deokate",
@@ -34,14 +35,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "DSA",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "MP",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "12:30",
@@ -76,14 +77,14 @@
         "end": "16:30",
         "type": "common",
         "subject": "LL",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "16:30",
         "end": "17:30",
         "type": "common",
         "subject": "LL",
-        "room": "NC-02"
+        "room": "NC-26"
       }
     ],
     "Tue": [
@@ -92,21 +93,21 @@
         "end": "10:30",
         "type": "common",
         "subject": "ENTSP",
-        "room": "NC-27"
+        "room": "NC-28"
       },
       {
         "start": "10:30",
         "end": "11:30",
         "type": "common",
         "subject": "PPL",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "DSA",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "12:30",
@@ -143,14 +144,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "DSA",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "MP",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "12:30",
@@ -193,14 +194,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "MP",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "PPL",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "12:30",

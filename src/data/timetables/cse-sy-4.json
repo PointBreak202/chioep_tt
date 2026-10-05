@@ -4,14 +4,14 @@
   "standing": "SY",
   "confidence": "Re-extracted via pdfplumber table-cell extraction from the department's Timetable-v6 (effective 17 Aug 26). High confidence. NOTE: this revision now shows two DSY batches (SY4-S5(DSY), SY4-S6(DSY)) with their own MDCP (Maths) slots and lab rotations woven into the main division schedule -- previously DSY was believed to be a single combined batch across Div3+Div4; that is superseded by this timetable.",
   "rooms": {
-    "NC-01": "NC-01, 1st Floor, Academic Complex",
-    "NC-02": "NC-02, 1st Floor, Academic Complex",
-    "NC-06": "NC-06, 2nd Floor, Academic Complex",
-    "NC-14": "NC-14, 4th Floor, Academic Complex",
-    "NC-14-": "NC14-, 4th Floor, Academic Complex",
+    "NC-25": "NC-25, 3rd Floor, New CSE Dept Building",
     "ISL": "Information Security Lab, 3rd Floor, ENTC Extension Building",
     "PL": "Programming Lab, Ground Floor, CSE Dept",
     "DBMSL": "DBMS Lab, 1st Floor, CSE Dept",
+    "NC-26": "NC-26, 3rd Floor, New CSE Dept Building",
+    "NC-27": "NC-27, 4th Floor, New CSE Dept Building",
+    "NC-14": "NC-14, 4th Floor, Academic Compex",
+    "NC-14-": "NC14_, 4th Floor, Academic Compex",
     "DMPL": "Digital and Microprocessor Lab, 1st Floor, Old CSE Bldg."
   },
   "faculty": {
@@ -47,7 +47,7 @@
           "SY4-S6(DSY)": {
             "subject": "MDCP",
             "label": "MDCP",
-            "room": "NC-14-",
+            "room": "NC-14",
             "faculty": "Maths Teacher2"
           }
         }
@@ -57,14 +57,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "DSA",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "PPL",
-        "room": "NC-02"
+        "room": "PL"
       },
       {
         "start": "12:30",
@@ -89,7 +89,7 @@
           "SY4-S3": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "PL"
           }
         }
       },
@@ -98,14 +98,14 @@
         "end": "16:30",
         "type": "common",
         "subject": "LL",
-        "room": "NC-06"
+        "room": "NC-27"
       },
       {
         "start": "16:30",
         "end": "17:30",
         "type": "common",
         "subject": "LL",
-        "room": "NC-06"
+        "room": "NC-27"
       }
     ],
     "Tue": [
@@ -123,7 +123,7 @@
           "SY4-S6(DSY)": {
             "subject": "MDCP",
             "label": "MDCP",
-            "room": "NC-14-",
+            "room": "NC-14",
             "faculty": "Maths Teacher2"
           }
         }
@@ -146,7 +146,7 @@
           "SY4-S4": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "PL"
           },
           "SY4-S3": {
             "subject": "DSA",
@@ -171,7 +171,7 @@
           "SY4-S6(DSY)": {
             "subject": "MDCP",
             "label": "MDCP",
-            "room": "NC-14-",
+            "room": "NC-14",
             "faculty": "Maths Teacher2"
           }
         }
@@ -181,14 +181,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "MP",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "DSA",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "12:30",
@@ -213,7 +213,7 @@
           "SY4-S5(DSY)": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "PL"
           }
         }
       }
@@ -224,7 +224,7 @@
         "end": "09:30",
         "type": "common",
         "subject": "ENTSP",
-        "room": "NC-01"
+        "room": "NC-25"
       },
       {
         "start": "09:30",
@@ -237,14 +237,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "PPL",
-        "room": "NC-02"
+        "room": "PL"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "MP",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "12:30",
@@ -264,7 +264,7 @@
           "SY4-S6(DSY)": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "PL"
           },
           "SY4-S5(DSY)": {
             "subject": "DSA",
@@ -286,12 +286,12 @@
           "SY4-S2": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "PL"
           },
           "SY4-S6(DSY)": {
             "subject": "MP",
             "label": "MP Lab",
-            "room": "DMPL",
+            "room": "PL",
             "faculty": "Shriganeshrajkumar Togare"
           }
         }
@@ -315,14 +315,14 @@
         "end": "11:30",
         "type": "common",
         "subject": "DSA",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "11:30",
         "end": "12:30",
         "type": "common",
         "subject": "MP",
-        "room": "NC-02"
+        "room": "NC-26"
       },
       {
         "start": "12:30",
@@ -342,7 +342,7 @@
           "SY4-S1": {
             "subject": "PPL",
             "label": "PPL Lab",
-            "room": "DBMSL"
+            "room": "PL"
           },
           "SY4-S5(DSY)": {
             "subject": "MP",
